@@ -111,7 +111,6 @@
 			<th>#</th>
 			<th>Name</th> 
 		  </tr>
-		  {{ .Params.chapters}}
 		{{ range $index, $element := .Params.chapters }}
 		  <tr onclick="window.location='/reader/?manga={{$.Params.slug}}&chapter={{ replace (index $.Params.chapterlinks $index) ( print "https://365manga.net/" $.Params.slug "/") ""}}'" style="cursor:pointer;">
 			<td>{{- add $index 1 -}}</td>
