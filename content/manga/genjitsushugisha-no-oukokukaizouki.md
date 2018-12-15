@@ -1,0 +1,12 @@
+--- 
+slug: "genjitsushugisha-no-oukokukaizouki"
+title: "Genjitsushugisha no Oukokukaizouki"
+publishdate: "2018-12-16"
+src: "https://365manga.net/manga/genjitsushugisha-no-oukokukaizouki"
+author: "Dozeumaru"
+image: "https://data.365manga.net/images/thumbnails/32760-genjitsushugisha-no-oukokukaizouki.jpg"
+tags: ["Action","Adventure","Comedy","Drama","Fantasy","Harem","Psychological","Reverse harem","Romance"]
+chapters: ["Chapter 14: The Last Warning ","Chapter 13: The Movements Inside The Two Countries. ","Chapter 12 ","Chapter 11 ","Chapter 10: Support ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2: Fundraising ","Chapter 1: Prologue"]
+chapterlinks: ["https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-14.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-13.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-12.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-11.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-10.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-9.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-8.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-7.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-6.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-5.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-4.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-3.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-2.html","https://365manga.net/genjitsushugisha-no-oukokukaizouki/chapter-1.html"]
+description: "“O, Hero!” With that cliched line, Kazuya Souma found himself summoned to another world and his adventure–-did not begin. After he presents his plan to strengthen the country economically and militarily, the king cedes the throne to him and Souma finds himself saddled with ruling the nation! What’s more, he’s betrothed to the king’s daughter now…?! In order to get the country back on its feet, Souma calls the wise, the talented, and the gifted to his side. Five people gather before the newly crowned Souma. Just what are the many talents and abilities they possess…?! What path will his outlook as a realist take Souma and the people of his country down? A revolutionary transferred-to-another-world administrative fantasy series starts here!"
+---

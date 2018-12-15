@@ -1,0 +1,12 @@
+--- 
+slug: "vampire-chan-x-junior-chan"
+title: "Vampire-chan x Junior-chan"
+publishdate: "2018-12-21"
+src: "https://365manga.net/manga/vampire-chan-x-junior-chan"
+author: "Takano Saku"
+image: "https://data.365manga.net/images/thumbnails/32715-vampire-chan-x-junior-chan.jpg"
+tags: ["Comedy","Ecchi","Mature","School life","Seinen","Supernatural","Yuri"]
+chapters: ["Chapter 11.6: Twitter Extras ","Chapter 11.5: Eleven & Half Night: First Time ","Chapter 11: Eleven Night: Selfish ","Chapter 10: Tenth Night: Jealousy ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 6.5: Extra ","Chapter 6.6: Melonbooks Booklet ","Chapter 5 ","Chapter 4 ","Chapter 3.5 ","Chapter 3  ","Chapter 2.5 ","Chapter 2 ","Chapter 1 ","Oneshot"]
+chapterlinks: ["https://365manga.net/vampire-chan-x-junior-chan/chapter-11-6.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-11-5.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-11.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-10.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-9.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-8.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-7.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-6.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-6-5.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-6-6.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-5.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-4.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-3-5.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-3.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-2-5.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-2.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-1.html","https://365manga.net/vampire-chan-x-junior-chan/chapter-0.html"]
+description: "Ajafuji Sara transferred to the private Fujigamine Academy. She suffers from extreme blushing and dreamed of making friends at the academy and having an 'ordinary student life'. However, having met at the scene, Kagen Iris set her eyes on her. Will her dream crumble away?"
+---

@@ -1,0 +1,609 @@
+
+/*
+Theme Name: Hentaku
+Theme URI: http://Hentaku.us
+Author: IEatBabies
+Author URI: http://Hentaku.us
+Description: A modern manga reader website.
+Version: 1.0
+License: GNU General Public License
+
+-------------------------------------------------------------- */
+/* Reset
+-------------------------------------------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  //vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+:target:before{
+	content:"";
+	display:block;
+	height:52px;
+	margin:-52px 0 0;
+}
+:root {
+    --gradient: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+	--color1:#F79533;
+	--color2:#F37055;
+	--color3:#EF4E7B;
+	--color4:#A166AB;
+	--color5:#5073B8;
+	--color6:#1098AD;
+	--color7:#07B39B;
+	--color8:#6DBA82;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+    /*background-image: linear-gradient(71deg, rgb(250, 97, 97), rgb(243, 127, 61));*/
+	background-color:var(--color3) !important;
+	border: none !important;
+	box-shadow:none !important;
+	border-radius:2px !important;
+}
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited{
+	color:var(--color3) !important;
+}
+.agradient{
+	
+}
+@font-face {
+    font-family: 'nunito_sans';
+    src: url("fonts/nunitosans-regular-webfont.woff2") format("woff2"), url("fonts/nunitosans-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'stratum';
+    src: url("fonts/stratum1-regular-webfont.woff2") format("woff2"), url("fonts/stratum1-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: Hello-Christmas;
+    src: url(fonts/Hello-Christmas-trial.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+body, html {
+    background-color: #141518;
+    color: white;
+	height:100%;
+}
+footer {
+	margin-top:10px;	
+}
+
+/* This is the existing CSS... */
+.fixed-top {
+  position: fixed;
+  top: 0;
+}
+/* Here's the new CSS to add... */
+.admin-bar .fixed-top {
+  top: 32px;
+}
+p{
+	
+}
+.bg-dark {
+    background-color: #34373c;
+}
+#logocontainer {
+}
+.logo {
+    height: 34px;
+    float: left;
+    /*
+	width: 83px;
+	background-image: url(images/imgur-logo.svg);
+	background-position:  center center; 
+	background-repeat: no-repeat;
+    background-size: contain;*/
+	font-family:"stratum","Arial Narrow","Trebuchet MS",sans-serif;
+	font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-image: var(--gradient);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+	}
+.gtext{
+    background-image: var(--gradient);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+	
+}
+.gbox {
+    border-left: 2px solid var(--color1);
+    border-right:2px solid var(--color8);
+    background-image: var(--gradient), var(--gradient);
+    background-size:100% 2px;
+    background-position:0 100%, 100% 0;
+    background-repeat:no-repeat;
+	border-radius:3px;
+	}
+
+#topbar li.nav-item:hover, #logocontainer.nav-item:hover {
+    background-color: #50545c;
+    border-radius: 1000px;
+}
+#topbar{
+	background-color:#34373c;
+	padding:8px 15px;
+}
+#topbar .container{
+	padding:0px 15px;
+	margin:0px 15px;
+}
+#topbar:after{
+	background: var(--gradient);
+	content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+
+}
+#topbar a.nav-link {
+    padding: 0px;
+    padding-bottom: 2px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+@media (min-width: 992px) {} body {
+    padding-top: 56px;
+}
+.thumbnails {
+}
+#tools {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px auto;
+}
+#tool-options {
+	display:inline-flex;
+	padding:0px 15px;
+}
+#page, .page{
+	width: 100%;
+	min-height:100%;
+	padding: 45px 20px 0px 20px;
+}
+#navbarResponsive a{
+    text-decoration: none;
+	color:rgba(255,255,255,.5);
+    padding: 0px;
+    padding-bottom: 2px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+#navbarResponsive a:hover{
+	
+}
+#navbarResponsive a:active{
+	color:white;
+}
+
+.adbox{
+	display: block;
+	position: relative;
+	background-image: linear-gradient(to right, #fc5c7d, #6a82fb);;
+	height: 150px;
+	width: 100%;
+	z-index:1;
+	text-align:center;
+	vertical-align:center;
+	color:white;
+}
+.adtext{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+	}
+.ad{
+	display: block;
+	position: relative;
+	height: 150px;
+	width: 100%;
+	opacity: .1;
+}
+#searchbar, #searchbutton{
+	background-color: #3f434a;
+	border: solid 1px #3f434a;
+	box-shadow: none;
+}
+.element{
+	background-color:#3f434a;
+	border-radius:3px;
+	margin:16px 0px;
+	padding:10px;
+}
+.headelement{
+	border-bottom:solid 1px #31333a;
+	padding:20px 20px 20px 20px;
+}
+.bodyelement{
+	padding:20px 20px 20px 20px;
+
+}
+.imagecontainer{
+	border-top: solid 1px var(--secondary);
+    padding-top: 15px;
+}
+#toolicons{
+	float:right;
+	color:var(--secondary);
+	list-style:none;
+	display:flex;
+	
+}
+#toolicons li{
+	margin:5px;
+}
+#tool-options{ margin-bottom:16px;}
+#tool-options .active{	color:var(--color3);}
+#tool-options a{color:var(--secondary);}
+.tab-content{
+	width:100%;
+}
+.tab-content:hover, .tab-content:active, .tab-content:visited, .tab-pane:hover, .tab-pane:active, .tab-pane:visited{
+	background-color:unset !important;
+}
+.dropdown-toggle{
+	padding: 2px 12px;
+    margin: 0px 10px;
+}
+.btn-secondary {
+    background-color: #3F434A;
+    border-radius: 2px;
+    border: none;
+    color: #007bff;
+}
+.btn-secondary: hover {
+    color: #007bff;
+	background-color: #50545c;
+}
+#pagination {
+    text-align: center;
+	margin:10px auto;
+}
+#pagination nav {
+    display: inline-flex;
+}
+#pagination .active a{
+	background-color: var(--color3);
+	color:white;
+}
+.pagination{
+	display:inline-flex;
+}
+.page-item, .J-paginationjs-page{
+    text-decoration: none;
+    background-color: transparent;
+    border:none;
+}
+
+.J-paginationjs-page a, .paginationjs-prev a, .paginationjs-next a{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+}
+.J-paginationjs-page a, .paginationjs-prev a, .paginationjs-next a, .page-link {
+	text-decoration: none;
+    background-color: transparent;
+    border:none;
+	color:white;
+}
+.J-paginationjs-page a:hover, .paginationjs-prev a:hover, .paginationjs-next a:hover, .page-link:hover {
+	text-decoration: none;
+    border:none;
+    background-color: #50545c;
+	color:white;
+}
+
+#myModal{
+	color:white;
+}
+.modal-dialog .close{
+	color:white;
+}
+.modal-text{
+	z-index:1;
+}
+.modal-body{
+	display:block;
+}
+.modal-content{
+	/*
+    background: var(--gradient); */
+	padding: 45px 25px;
+    border-radius: 6px;
+    position: relative;
+	border:unset;
+	padding:20px 15px;
+}
+.modal-content:after{
+	content: '';
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+    left: 4px;
+    background: #22292C;
+}
+.modal-header{
+	border:none;
+}
+.active:hover {
+	text-decoration: none;
+    border:none;
+    background-color: #50545c;
+	color:var(--color3);
+}
+
+.active{
+	color:var(--color3);
+}
+.tag {
+    display: inline-block;
+    border-radius: 4px;
+    background: #71858E;
+    color: white;
+    font-size: 11px;
+    padding: 3px 4px;
+    font-family: "nunito_sans",serif;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+}
+.tag:hover {
+    display: inline-block;
+    border-radius: 4px;
+    color: white;
+    font-size: 11px;
+    padding: 3px 4px;
+    font-family: "nunito_sans",serif;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+}
+.tag1{	background: var(--color1);    color: white;}
+.tag2{	background: var(--color2);    color: white;}
+.tag3{	background: var(--color3);    color: white;}
+.tag4{	background: var(--color4);    color: white;}
+.tag5{	background: var(--color5);    color: white;}
+.tag6{	background: var(--color6);    color: white;}
+.tag7{	background: var(--color7);    color: white;}
+.tag8{	background: var(--color8);    color: white;}
+div.caption{  
+	//position: absolute;
+    background-color: #3f434a;
+    font-family: 'tahoma';
+    font-size: 15px;
+    color: white;
+    //opacity: 0.6;
+    //filter: alpha(opacity=60);
+    //bottom: 0px;
+	//right:0px;
+	//left:0px;
+} 
+#home .caption{
+	border-top:solid var(--color3);
+	margin-bottom:15px;
+
+}
+#home .thumbnail{
+	border-radius:5px;
+}
+.caption_content{  
+    padding:10px;  
+	max-width:80%;
+	margin:0px auto;
+}  
+#post-thumbnail{
+	width:100%;
+}
+.right-caption .thumbnail, .right-caption .thumbnail a, .right-caption .thumbnail figure{
+	height:100%;
+	width:unset;
+}
+.right-caption #post-thumbnail{
+	height:100%;
+	width:unset;
+	
+}
+.right-caption .caption_content{
+	display:inline-block;
+}
+.right-caption img {
+    float: left;
+    margin-right: 9px;
+	height:100%;
+	}
+
+.right-caption {
+    float: left;
+	width:100%;
+	height:200px;
+}
+
+.right-caption .caption {
+    padding: unset;
+	position: unset;
+    height: 100%;
+	width:unset;
+    background-color: unset;
+    font-family: 'tahoma';
+    font-size: 15px;
+    color: white;
+    opacity: unset;
+    filter: unset;
+    top: unset;
+
+}
+/*************************************Info Page***********************************/
+.detailtitle{
+	border-bottom: solid 1px var(--color3);
+	padding-bottom:10px;
+}
+.detail{
+	display:flex;
+}
+.label{
+	padding-right:13px;
+	width:100px;
+}
+#topinfo button{
+	margin:0px 5px 5px 0px;
+	float:right;
+
+}
+#right,#left{
+	margin-bottom:20px;
+	padding:0px 15px;
+}
+#bottom{
+	text-align:center;
+	width:100%;
+	padding:15px;
+}
+#bottom .btn-group{
+	width:100%;
+	text-align:center;
+	margin:20px 0px;
+}
+#bottom button{
+	border-radius:0px !important;
+	width:33%;
+}
+#infomenu{
+width:auto;
+}
+#infomenu li{
+    width: 33.333%;
+    padding: 0px 2px;
+    text-align: center;
+}
+#infomenu button{
+	width:100%;
+}
+#infomenu .active button, #infomenu .active button:hover, #infomenu .active button:active, #infomenu .active button:visited{
+	background-color: var(--color3);
+	color:white !important;
+}
+#bottom .tab-content .active {
+  display: flex;
+}
+#isso-thread{
+	float: left;
+	text-align: left;
+}

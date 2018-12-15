@@ -1,0 +1,33 @@
+{{ $paginator := $.Paginator }}
+{{ range $paginator.Pagers}}
+	{{$url := .URL}}
+	{{range .Pages}}
+		{{if ne ($.Scratch.Get "a") "true" }}{{if eq (hasPrefix (lower .Title) "a") true }}{{$.Scratch.Add "a" "true"}}<li><a href="{{$url}}#A">A</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "b") "true" }}{{if eq (hasPrefix (lower .Title) "b") true }}{{$.Scratch.Add "b" "true"}}<li><a href="{{$url}}#B">B</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "c") "true" }}{{if eq (hasPrefix (lower .Title) "c") true }}{{$.Scratch.Add "c" "true"}}<li><a href="{{$url}}#C">C</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "d") "true" }}{{if eq (hasPrefix (lower .Title) "d") true }}{{$.Scratch.Add "d" "true"}}<li><a href="{{$url}}#D">D</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "e") "true" }}{{if eq (hasPrefix (lower .Title) "e") true }}{{$.Scratch.Add "e" "true"}}<li><a href="{{$url}}#E">E</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "f") "true" }}{{if eq (hasPrefix (lower .Title) "f") true }}{{$.Scratch.Add "f" "true"}}<li><a href="{{$url}}#F">F</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "g") "true" }}{{if eq (hasPrefix (lower .Title) "g") true }}{{$.Scratch.Add "g" "true"}}<li><a href="{{$url}}#G">G</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "h") "true" }}{{if eq (hasPrefix (lower .Title) "h") true }}{{$.Scratch.Add "h" "true"}}<li><a href="{{$url}}#H">H</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "i") "true" }}{{if eq (hasPrefix (lower .Title) "i") true }}{{$.Scratch.Add "i" "true"}}<li><a href="{{$url}}#I">I</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "j") "true" }}{{if eq (hasPrefix (lower .Title) "j") true }}{{$.Scratch.Add "j" "true"}}<li><a href="{{$url}}#J">J</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "k") "true" }}{{if eq (hasPrefix (lower .Title) "k") true }}{{$.Scratch.Add "k" "true"}}<li><a href="{{$url}}#K">K</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "l") "true" }}{{if eq (hasPrefix (lower .Title) "l") true }}{{$.Scratch.Add "l" "true"}}<li><a href="{{$url}}#L">L</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "m") "true" }}{{if eq (hasPrefix (lower .Title) "m") true }}{{$.Scratch.Add "m" "true"}}<li><a href="{{$url}}#M">M</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "n") "true" }}{{if eq (hasPrefix (lower .Title) "n") true }}{{$.Scratch.Add "n" "true"}}<li><a href="{{$url}}#N">N</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "o") "true" }}{{if eq (hasPrefix (lower .Title) "o") true }}{{$.Scratch.Add "o" "true"}}<li><a href="{{$url}}#O">O</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "p") "true" }}{{if eq (hasPrefix (lower .Title) "p") true }}{{$.Scratch.Add "p" "true"}}<li><a href="{{$url}}#P">P</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "q") "true" }}{{if eq (hasPrefix (lower .Title) "q") true }}{{$.Scratch.Add "q" "true"}}<li><a href="{{$url}}#Q">Q</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "r") "true" }}{{if eq (hasPrefix (lower .Title) "r") true }}{{$.Scratch.Add "r" "true"}}<li><a href="{{$url}}#R">R</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "s") "true" }}{{if eq (hasPrefix (lower .Title) "s") true }}{{$.Scratch.Add "s" "true"}}<li><a href="{{$url}}#S">S</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "t") "true" }}{{if eq (hasPrefix (lower .Title) "t") true }}{{$.Scratch.Add "t" "true"}}<li><a href="{{$url}}#T">T</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "u") "true" }}{{if eq (hasPrefix (lower .Title) "u") true }}{{$.Scratch.Add "u" "true"}}<li><a href="{{$url}}#U">U</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "v") "true" }}{{if eq (hasPrefix (lower .Title) "v") true }}{{$.Scratch.Add "v" "true"}}<li><a href="{{$url}}#V">V</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "w") "true" }}{{if eq (hasPrefix (lower .Title) "w") true }}{{$.Scratch.Add "w" "true"}}<li><a href="{{$url}}#W">W</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "x") "true" }}{{if eq (hasPrefix (lower .Title) "x") true }}{{$.Scratch.Add "x" "true"}}<li><a href="{{$url}}#X">X</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "y") "true" }}{{if eq (hasPrefix (lower .Title) "y") true }}{{$.Scratch.Add "y" "true"}}<li><a href="{{$url}}#Y">Y</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "z") "true" }}{{if eq (hasPrefix (lower .Title) "z") true }}{{$.Scratch.Add "z" "true"}}<li><a href="{{$url}}#Z">Z</a></li>{{end}}{{end}}
+		{{if ne ($.Scratch.Get "parody") "true" }}{{if eq (hasPrefix (lower .Title) "parody") true }}{{$.Scratch.Add "parody" "true"}}<li><a href="{{$url}}#P">Parody</a></li>{{end}}{{end}}
+	{{end}}
+{{end}}

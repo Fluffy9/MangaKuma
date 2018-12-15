@@ -1,0 +1,14 @@
+--- 
+slug: "gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu"
+title: "Gaikotsu Kishi-sama, Tadaima Isekai e Odekake-chuu"
+publishdate: "2019-01-03"
+src: "https://365manga.net/manga/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu"
+author: "Hakari Enki, Sawano Akira"
+image: "https://data.365manga.net/images/thumbnails/32581-gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu.jpg"
+tags: ["Action","Adventure","Comedy","Fantasy","Supernatural"]
+chapters: ["Chapter 18 ","Chapter 17: Bringer Of Clamaity I ","Chapter 16: An Elven Bride ","Chapter 15: Arian Being Drunk ","Chapter 14 ","Chapter 13 ","Chapter 12 ","Chapter 11 ","Chapter 10 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Vol.1 Chapter 2: Chapter 2 ","Vol.1 Chapter 1: Chapter 1"]
+chapterlinks: ["https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-18.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-17.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-16.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-15.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-14.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-13.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-12.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-11.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-10.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-9.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-8.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-7.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-6.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-5.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-4.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-3.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-2.html","https://365manga.net/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/chapter-1.html"]
+description: "The protagonist fell asleep while playing an online game. However, he awoke in a strange world with his game character’s appearance. In a state of shock, he noticed that he was equipped with nothing but his strongest weapon and armor. To make matters worse, our hero’s appearance was changed by the special avatar skin 『Skeleton』 when he enter this new world. The protagonist wanted to live without drawing attention, but he got acquainted with the dark elf Ariana and received her request.
+This very similar to:
++ Overlord"
+---

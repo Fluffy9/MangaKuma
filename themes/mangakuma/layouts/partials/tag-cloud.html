@@ -1,0 +1,41 @@
+<div id="tagcloud">
+{{ $alphabet := slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"}}
+{{ $tagcolor := slice "1" "2" "3" "4" "5" "6" "7" "8" "8" "7" "6" "5" "4" "3" "2" "1" "1" "2" "3" "4" "5" "6" "7" "8" "8" "7"}}
+{{ $tags := $.Site.Taxonomies.tags.ByCount }}
+{{ range first 50 $tags }}
+	{{ if .Term }}
+	{{ $term := .Term}}
+	{{$name := .Name}}
+	{{range $index, $a := $alphabet}}
+		{{if eq (hasPrefix (lower $term) (lower (string .)) ) true}}
+		{{ $color := index $tagcolor $index}}
+		{{$.Scratch.Add "color" $color}}
+		{{ end }}
+	{{ end }}
+		{{ $tagUrl := printf "tags/%s" $term | relURL }}
+		
+{{/* Functionality for the gendered tags */}}
+		{{if (gt (len $name ) 4)}}
+		{{if eq (lower (substr $name (sub (len $name ) 4) 4)) "male"}}
+			{{if and (eq (lower (substr $name (sub (len  $name ) 7) 7)) "_female") (gt (len $name ) 7)}}
+				<a href="{{ $tagUrl }}" title="{{ humanize (index $.Site.Data.definitions (lower (substr $name 0 -7)))}}" class='tag tag{{$.Scratch.Get "color"}}'>{{title (replace (lower $name) "_female" " ♀")}}</a>
+			{{else}}
+				{{if and (eq (lower (substr $name (sub (len $name ) 5) 5)) "_male") (gt (len $name ) 5)}}
+					<a href="{{ $tagUrl }}" title="{{ humanize (index $.Site.Data.definitions (lower (substr $name 0 -5)))}}" class='tag tag{{$.Scratch.Get "color"}}'>{{title (replace (lower $name) "_male" " ♂")}}</a>
+				{{else}}
+					<a href="{{ $tagUrl }}" title="{{ index $.Site.Data.definitions (lower $name)}}" class='tag tag{{$.Scratch.Get "color"}}'>{{title $name }}</a>
+				{{end}}
+			{{end}}
+		{{else}}
+			<a href="{{ $tagUrl }}" title="{{ index $.Site.Data.definitions (lower $name)}}" class='tag tag{{$.Scratch.Get "color"}}'>{{title $name }}</a>
+		{{end}}
+	{{else}}
+		<a href="{{ $tagUrl }}" title="{{ index $.Site.Data.definitions (lower $name)}}" class='tag tag{{$.Scratch.Get "color"}}'>{{title $name }}</a>
+	{{end}}
+{{/* Functionality for the gendered tags */}}
+
+		
+		{{$.Scratch.Delete "color"}}
+{{ end }}
+{{ end }}
+</div>

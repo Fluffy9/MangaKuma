@@ -1,0 +1,8 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range (where $.Site.Pages "Type" "manga") -}}
+	{{ if .IsPage}}
+		{{- $t := . -}}
+		{{- $.Scratch.Add "index" (dict "title" $t.Params.title "ref" $t.Permalink "tags" $t.Params.tags "src" $t.Params.src "pages" (len $t.Pages)) -}}
+	{{- end -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

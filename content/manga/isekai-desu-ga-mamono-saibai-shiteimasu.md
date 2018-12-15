@@ -1,0 +1,12 @@
+--- 
+slug: "isekai-desu-ga-mamono-saibai-shiteimasu"
+title: "Isekai desu ga Mamono Saibai shiteimasu."
+publishdate: "2018-12-12"
+src: "https://365manga.net/manga/isekai-desu-ga-mamono-saibai-shiteimasu"
+author: "Setsugetsuka"
+image: "https://data.365manga.net/images/thumbnails/32796-isekai-desu-ga-mamono-saibai-shiteimasu.jpg"
+tags: ["Action","Comedy","Drama","Fantasy"]
+chapters: ["Chapter 15: Desert Continent ","Chapter 14: Netzach Continent ","Chapter 13: Taste Of Home ","Chapter 12: Finals ","Chapter 11 ","Chapter 10 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1"]
+chapterlinks: ["https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-15.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-14.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-13.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-12.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-11.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-10.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-9.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-8.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-7.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-6.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-5.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-4.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-3.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-2.html","https://365manga.net/isekai-desu-ga-mamono-saibai-shiteimasu/chapter-1.html"]
+description: "One day, Kyouji Himuro hears a knock on his door. Opening it up, he finds that he is transported to another world. But his new life is not good. He has no fighting skill, no money, and no way to make food. While dumpster diving, Kyouji discovers seeds and comes up with a plan to grow his own food. However, his plans change when he realizes that these seeds grow monsters..."
+---

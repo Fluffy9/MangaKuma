@@ -1,0 +1,12 @@
+--- 
+slug: "because-i-m-an-uncle-who-runs-a-weapon-shop"
+title: "Because I'm An Uncle who Runs A Weapon Shop"
+publishdate: "2018-12-13"
+src: "https://365manga.net/manga/because-i-m-an-uncle-who-runs-a-weapon-shop"
+author: "Sf Light Novels, Xue Po, Man Tian Xing Hua"
+image: "https://data.365manga.net/images/thumbnails/32786-because-i-m-an-uncle-who-runs-a-weapon-shop.jpg"
+tags: ["Action","Adventure","Drama","Fantasy","Mystery","Romance","Shounen","Shounen ai"]
+chapters: ["Chapter 13 ","Chapter 12 ","Chapter 11 ","Chapter 10 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3.2 ","Chapter 3.1 ","Chapter 2.3 ","Chapter 2.2 ","Chapter 2.1 ","Chapter 1.2 ","Chapter 1.1"]
+chapterlinks: ["https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-13.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-12.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-11.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-10.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-9.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-8.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-7.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-6.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-5.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-4.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-3-2.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-3-1.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-2-3.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-2-2.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-2-1.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-1-2.html","https://365manga.net/because-i-m-an-uncle-who-runs-a-weapon-shop/chapter-1-1.html"]
+description: "A weapons shop owner who is more much more capable than he looks, a clever and cute young demon loli from unknown origins. What roles do these two play in a new world where nothing is certain!"
+---

@@ -1,0 +1,147 @@
+
+{{- partialCached "header.html" . -}}
+	<div id="desktop" class="page">
+	<!-- Left -->
+	<div class="row">
+	<div id="left" class="col-md-8">
+		<div class="adbox" style="margin-bottom:20px; display:none">
+			<h1 class="adtext" >Your Ad Here</h1>
+			<img class="ad" src="/onepunch-man-3919089.jpg"/>
+		</div>
+		{{if ne .Data.Singular "tag"}}
+
+		<p>
+		Welcome to Hentaku! We aim to be the #1 place for experiencing japanese hentai manga / doujinshi on the web. 
+		Stay for a while and return every day. We pride ourselves on keeping a clean interface, by keeping costs low and using<a style="color:var(--color3)" href="/about"> non-intrusive monitzation 
+		methods (web mining).</a>  There is always something new to see as fresh doujin are posted daily. You can even get involved and <a style="color:var(--color3)" href="http://www.reddit.com/r/hentaku">join the community.</a>
+		
+		</p>
+		{{end}}
+		
+		
+
+	<!-- Tools -->
+    <div id="tools" class="">
+        <div id="tool-options" class="container">
+			<ul id="toolicons" class="nav nav-pills ml-auto">
+			<li target="1"><a href="#menu1" class="active" data-toggle="pill"><i class="fas fa-list"></i></a></li>
+			<li target="0"><a href="#home"  data-toggle="pill"><i class="fas fa-th" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></i></a></li>
+
+			</ul>
+
+		</div>
+    </div>
+	
+    <!-- Page Content -->
+	<div id="search-results" class="container thumbnails"></div>
+    <div id="results" class="container thumbnails">
+		{{if ne .Data.Singular "tag"}}
+		<div class="row text-center text-lg-left imagecontainer">	
+			<div class="tab-content">
+						{{ $paginator := .Paginate (where (where .Site.Pages "Section" "manga") "Name" "0001")}}
+					<div id="menu1" class="tab-pane active in">
+						{{ range $index, $element := $paginator.Pages.ByDate.Reverse }}
+							{{ $t := .Site.GetPage (printf "%s%s" "manga/" .Params.manga) }}
+								{{- partial "series-list.html" $t (dict "page" . "index" $index) -}}
+						{{ end }}
+					</div>
+				<div id="home" class="tab-pane fade">
+					<div class="row">
+					{{ range $index, $element := $paginator.Pages.ByDate.Reverse }}
+							{{ $t := .Site.GetPage (printf "%s%s" "manga/" .Params.manga) }}
+							{{- partial "series-thumb.html" $t (dict "page" . "index" $index) -}}
+					{{ end }}
+					</div>
+				</div>
+			</div>
+	
+					{{- partial "pagination.html" . -}}
+
+			
+        </div>
+		{{end}}
+		{{if eq .Data.Singular "tag"}}
+		
+				{{/*Gendered Tags Logic*/}}
+				{{$title := .Name}}
+				{{if (gt (len $title) 4)}}
+					{{if eq (substr $title (sub (len $title) 4) 4) "male"}}
+						{{if and (eq (substr $title (sub (len $title) 7) 7) "_female") (gt (len $title) 7)}}
+							<h1 style="display:inline-block;">{{- replace $title "_female" " ♀ (Female)" -}}</h1>
+							<p>{{- humanize (index $.Site.Data.definitions (lower (substr .Name 0 -7))) -}}</p>
+						{{else}}
+							{{if and (eq (substr $title (sub (len $title) 5) 5) "_male") (gt (len $title) 5)}}
+								<h1 style="display:inline-block;">{{- replace $title "_male" " ♂ (Male)" -}}</h1>
+								<p>{{- humanize (index $.Site.Data.definitions (lower (substr .Name 0 -5))) -}}</p>
+							{{else}}
+								<h1 style="display:inline-block;">{{- .Name -}}</h1>
+								<p>{{- humanize (index $.Site.Data.definitions (lower .Name)) -}}</p>
+							{{end}}
+						{{end}}
+					{{else}}
+						<h1 style="display:inline-block;">{{- .Name -}}</h1>
+						<p>{{- humanize (index $.Site.Data.definitions (lower .Name)) -}}</p>
+					{{end}}
+				{{else}}
+						<h1 style="display:inline-block;">{{- .Name -}}</h1>
+						<p>{{- humanize (index $.Site.Data.definitions (lower .Name)) -}}</p>
+				{{end}}
+				{{/*Gendered Tags Logic*/}}
+
+		
+        <div class="row text-center text-lg-left imagecontainer">	 						
+			<div class="tab-content">
+					{{ $paginator := .Paginate (where .Data.Pages "Section" "manga")}}
+				<div id="menu1" class="tab-pane in active">
+					{{ range $index, $element := $paginator.Pages.ByDate.Reverse }}
+						{{- partial "series-list.html" . (dict "page" . "index" $index) -}}
+					{{ end }}
+				</div>
+				<div id="home" class="tab-pane fade">
+					<div class="row">
+					{{ range $index, $element := $paginator.Pages.ByDate.Reverse }}
+						{{- partial "series-thumb.html" . (dict "page" . "index" $index) -}}
+
+					{{ end }}
+					</div>
+				</div>
+			</div>
+					{{- partial "pagination.html" . -}}
+
+			
+        </div>
+		{{end}}
+
+    </div>
+
+    <!-- /.container -->
+
+				<div class="adbox" style="margin-bottom:20px; display:none">
+			<h1 class="adtext" >Your Ad Here</h1>
+			<img class="ad" src="/onepunch-man-3919089.jpg"/>
+			</div>
+
+	</div>
+	<div id="right" class="col-md-4">
+	{{- partial "searchbar.html" -}}
+		
+	<div class="element">
+		<div class="headelement"><h5>Top 50 Tags</h5></div>
+		<div class="bodyelement">
+			{{- partialCached "tag-cloud.html" . -}}
+		</div>
+	</div>
+		</br>
+		</br>
+		<iframe src="https://discordapp.com/widget?id=495081085282287628&theme=dark" width="100%" height="500" allowtransparency="true" showAllUsers="true" frameborder="0"></iframe>
+		<div class="discord-widget"></div>
+		<div class="adbox" style="display:none">
+			<h1 class="adtext">Your Ad Here</h1>
+			<img class="ad" src="/onepunch-man-3919089.jpg"/>
+		</div>
+	</div>
+	</div>	
+	</div>	
+	
+
+{{- partialCached "footer.html" . -}}

@@ -1,0 +1,12 @@
+--- 
+slug: "satoshi-kon-s-opus"
+title: "Satoshi Kon's OPUS"
+publishdate: "2019-01-10"
+src: "https://365manga.net/manga/satoshi-kon-s-opus"
+author: "Kon Satoshi"
+image: "https://data.365manga.net/images/thumbnails/32512-satoshi-kon-s-opus.jpg"
+tags: ["Action","Adult","Adventure","Drama","Fantasy","Mystery","Psychological","Seinen","Supernatural"]
+chapters: ["Chapter 20: [end] ","Chapter 19 ","Chapter 18 ","Chapter 17 ","Chapter 16 ","Chapter 15 ","Chapter 14 ","Chapter 13 ","Chapter 12 ","Chapter 11 ","Chapter 10 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1"]
+chapterlinks: ["https://365manga.net/satoshi-kon-s-opus/chapter-20.html","https://365manga.net/satoshi-kon-s-opus/chapter-19.html","https://365manga.net/satoshi-kon-s-opus/chapter-18.html","https://365manga.net/satoshi-kon-s-opus/chapter-17.html","https://365manga.net/satoshi-kon-s-opus/chapter-16.html","https://365manga.net/satoshi-kon-s-opus/chapter-15.html","https://365manga.net/satoshi-kon-s-opus/chapter-14.html","https://365manga.net/satoshi-kon-s-opus/chapter-13.html","https://365manga.net/satoshi-kon-s-opus/chapter-12.html","https://365manga.net/satoshi-kon-s-opus/chapter-11.html","https://365manga.net/satoshi-kon-s-opus/chapter-10.html","https://365manga.net/satoshi-kon-s-opus/chapter-9.html","https://365manga.net/satoshi-kon-s-opus/chapter-8.html","https://365manga.net/satoshi-kon-s-opus/chapter-7.html","https://365manga.net/satoshi-kon-s-opus/chapter-6.html","https://365manga.net/satoshi-kon-s-opus/chapter-5.html","https://365manga.net/satoshi-kon-s-opus/chapter-4.html","https://365manga.net/satoshi-kon-s-opus/chapter-3.html","https://365manga.net/satoshi-kon-s-opus/chapter-2.html","https://365manga.net/satoshi-kon-s-opus/chapter-1.html"]
+description: "Opus is Kon's metafictional tale of Chikara Nagai, a creator under pressure to finish his latest graphic novel, Resonance, who finds that the harshest critic of the shock ending he's got planned is the character who'll have to die in it! Nagai's strengths and weaknesses as a creator are tested beyond their limits as his present and his past, and the worlds of the manga and of reality, become the levels of a maze he may never escape... let alone get a chance to resolve the story!"
+---

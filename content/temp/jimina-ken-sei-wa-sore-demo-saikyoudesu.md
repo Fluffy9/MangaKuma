@@ -1,0 +1,7 @@
+--- 
+title: "Jimina Ken Sei Wa Sore Demo Saikyoudesu"
+publishdate: "2019-1-19T16:48:46+02:00"
+src: "https://365manga.net/manga/jimina-ken-sei-wa-sore-demo-saikyoudesu"
+image: "https://data.365manga.net/images/thumbnails/32463-jimina-ken-sei-wa-sore-demo-saikyoudesu.jpg"
+description: " Sansui died and was taken to god, where he explains that due to his mistake he killed Sansui, and as an apologize god said that he would reincarnate him in another world with the power he desires. Sansui desire to be the strongest in the world, but soon realizes that his desire may be the most difficult test of his life."
+---

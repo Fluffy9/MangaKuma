@@ -1,0 +1,101 @@
+{{- partialCached "header.html" . -}}
+		<div id="toolbar"> 
+			<div id="sort">
+				<select class="form-control" id="sel1">
+					<option>New</option>
+					<option>Popular</option>
+				</select>
+				<select onChange="window.location.href=this.value" class="form-control" id="sel1">
+				<option value="/tags/4-koma/">4 koma</option>
+				<option value="/tags/action/">Action</option>
+				<option value="/tags/adult/">Adult</option>
+				<option value="/tags/adventure/">Adventure</option>
+				<option value="/tags/award-winning/">Award winning</option>
+				<option value="/tags/comedy/">Comedy</option>
+				<option value="/tags/cooking/">Cooking</option>
+				<option value="/tags/demons/">Demons</option>
+				<option value="/tags/doujinshi/">Doujinshi</option>
+				<option value="/tags/drama/">Drama</option>
+				<option value="/tags/ecchi/">Ecchi</option>
+				<option value="/tags/fantasy/">Fantasy</option>
+				<option value="/tags/gender-bender/">Gender bender</option>
+				<option value="/tags/harem/">Harem</option>
+				<option value="/tags/historical/">Historical</option>
+				<option value="/tags/horror/">Horror</option>
+				<option value="/tags/josei/">Josei</option>
+				<option value="/tags/magic/">Magic</option>
+				<option value="/tags/martial-arts/">Martial arts</option>
+				<option value="/tags/mature/">Mature</option>
+				<option value="/tags/mecha/">Mecha</option>
+				<option value="/tags/medical/">Medical</option>
+				<option value="/tags/music/">Music</option>
+				<option value="/tags/mystery/">Mystery</option>
+				<option value="/tags/one-shot/">One shot</option>
+				<option value="/tags/psychological/">Psychological</option>
+				<option value="/tags/reverse-harem/">Reverse harem</option>
+				<option value="/tags/romance/">Romance</option>
+				<option value="/tags/school-life/">School life</option>
+				<option value="/tags/sci-fi/">Sci fi</option>
+				<option value="/tags/seinen/">Seinen</option>
+				<option value="/tags/shoujo">Shoujo</option>
+				<option value="/tags/shoujo-ai/">Shoujo ai</option>
+				<option value="/tags/shounen/">Shounen</option>
+				<option value="/tags/shounen-ai/">Shounen ai</option>
+				<option value="/tags/slice-of-life/">Slice of life</option>
+				<option value="/tags/smut/">Smut</option>
+				<option value="/tags/sports/">Sports</option>
+				<option value="/tags/super-power/">Super power</option>
+				<option value="/tags/supernatural/">Supernatural</option>
+				<option value="/tags/suspense/">Suspense</option>
+				<option value="/tags/tragedy/">Tragedy</option>
+				<option value="/tags/vampire/">Vampire</option>
+				<option value="/tags/webtoon/">Webtoon</option>
+				<option value="/tags/yaoi/">Yaoi</option>
+				<option value="/tags/youkai/">Youkai</option>
+				<option value="/tags/yuri/">Yuri</option>
+				</select>
+			</div>
+			<div id="search">
+				<div class="col-auto" style="padding: 0px">
+						<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find your interests">
+						<button class="input-group-text">Search</button>
+				</div>
+			</div>				
+		</div>
+		</br>
+		</br>
+		{{if eq .Data.Singular "tag"}}
+		<h1>{{ .Name }}</h1>
+		<p>{{- humanize (index $.Site.Data.definitions (lower .Name)) -}}</p>
+		{{ end }}
+		
+		<div id="thumbnails">
+			<div class="row">
+			{{if ne .Data.Singular "tag"}}
+				{{ $page := .Paginate (where .Data.Pages "Section" "manga")}}
+				{{ range $page.Pages }}
+					{{ if isset .Params "name" }}
+						{{- partial "series.html" . -}}
+					{{ end }}
+					{{ if isset .Params "src"}}
+						{{- partial "series.html" . -}}
+					{{ end }}
+				{{ end }}
+			</div>
+		</div>
+				{{- partial "pagination.html" . -}}
+			{{else}}
+				{{ range .Paginator.Pages }}
+					{{ if isset .Params "name" }}
+						{{- partial "series.html" . -}}
+					{{ end }}
+					{{ if isset .Params "src"}}
+						{{- partial "series.html" . -}}
+					{{ end }}
+				{{ end }}
+			</div>
+		</div>
+				{{- partial "pagination.html" . -}}
+			{{end}}
+
+{{- partialCached "footer.html" . -}}

@@ -1,0 +1,45 @@
+<!--series thumbnails-->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+});
+	$(".title").text(function(index, currentText) {
+		if(currentText.length > 70){
+			return currentText.substr(0, 70)+"...";
+		}
+		return currentText;
+	});
+</script>
+	<div class="col-lg-4 col-xs-8" >
+		<div class="thumbnail">
+		
+	{{ $permalink := .Permalink }}
+	{{ $p := . }}
+	{{/* printf "%#v" $p.Name */}}
+	{{ $title := $p.Name }}
+	{{ $url := $p.Permalink }}
+			<a href="{{$url}}">
+			  <figure >
+				  <!--<img id="post-thumbnail" class="img-responsive responsive--full" src='http://images.hentaku.org/resize/600x600/{{$p.Title}}/0001.jpg' onerror="this.onerror=null;this.src='https://s3-us-west-2.amazonaws.com/images.hentaku.org/{{$p.Title}}/0001.jpg';" title="thumbnail for '{{$title}}' hentai manga" alt="Cannot find '{{$title}}' hentai thumbnail">-->
+				  <img id="post-thumbnail" class="lozad img-responsive responsive--full" src='/Avocados/{{range (readDir "/static/Avocados" | shuffle | first 1)  }}{{.Name}}{{end}}' data-src='http://images.weserv.nl/?url=https://hentaku.sfo2.cdn.digitaloceanspaces.com/{{$p.Title}}/0001.jpg&w=600' onerror="this.onerror=null;this.src='https://hentaku.sfo2.cdn.digitaloceanspaces.com/{{$p.Title}}/0001.jpg';" title="thumbnail for '{{$title}}' hentai manga" alt="Cannot find '{{$title}}' hentai thumbnail">			  </figure>		
+			</a>
+			<div class="caption">
+			<div class="caption_content">
+			<h5 class="title" style="text-align:center;">
+				{{ $p.Params.name }} 
+			</h5>
+			<div class="post-meta">								
+			</div><!--/post-meta -->
+
+			<div class="the-content">
+			</div><!-- the-content -->
+
+			<div class="meta clearfix">
+				<div class="category"></div>
+				<div class="tags"></div>
+			</div><!-- Meta -->
+			</div>
+			</div>
+		</div>
+	</div>
+<!--series thumbnail-->

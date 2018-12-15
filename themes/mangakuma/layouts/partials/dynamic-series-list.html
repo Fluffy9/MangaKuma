@@ -1,0 +1,102 @@
+<script>
+var manga = [];
+$.getJSON( "https://www.reddit.com/r/doujinshi/new.json", function( data ) {
+	for(i = 0; i < 15; i++){
+		that = data.data.children[i].data;
+		title = that.title.replace(/ *\([^)]*\) */g,"").replace(/ *\[[^\]]*]/,"");
+		id = that.id;
+	manga[i] = {
+			id : id,
+			created : that.created_utc,
+			title : title,
+			submitter : that.author,
+			author : that.title.replace(title,"").replace(/ *\([^)]*\) */g,""),
+			permalink : "https://www.reddit.com" + that.permalink,
+			thumbnail : that.preview.images[0].source.url 
+		};
+		//$.getJSON( manga[i].permalink + ".json", function( post ) {
+			//that = post[0].data.children[0].data;
+			//it = manga.filter(function (el) {
+			//  return el.id == id
+			//  });
+			//$(("#" + id)).find("#pages").text(that.images.length);
+		//});
+	}
+});
+
+</script>
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+	$(".title").text(function(index, currentText) {
+		if(currentText.length > 70){
+			return currentText.substr(0, 70)+"...";
+		}
+		return currentText;
+	});
+	$(".description").text(function(index, currentText) {
+		if(currentText.length > 70){
+			return currentText.substr(0, 70)+"...";
+		}
+		return currentText;
+	});
+	var template = $("#template").html();
+	for(i = 0; i < manga.length; i++){
+		t = $(template);
+		t.find('#post-thumbnail').attr("src",manga[i].thumbnail);
+		t.find('#MangaLink').attr("href",manga[i].permalink);
+		t.find('#title').text(manga[i].title);
+		t.find('#ID').attr("id",manga[i].id);
+		$("#render").append(t);
+		//$("#post-thumbnail").attr("src",manga[0].thumbnail);
+		//$("#MangaLink").attr("href",manga[0].permalink);
+		//$($(".title")[0]).text(manga[0].title);
+		
+	}
+	
+});
+</script>
+<!--series thumbnails-->
+<div id="render"></div>
+<div id="template" style="display:none;">
+<div id="ID" class="element right-caption row " style="border: solid">
+	<div class="right-caption row" style="height:unset;">
+	<div class="thumbnail span4 col-4">
+	{{/* $permalink := .Permalink */}}
+	{{/* printf "%#v" .Title */}}
+	{{/* $p := . */}}
+	{{/* $n := $p.Params.name */}}
+	{{/* $title := $p.Params.title */}}
+	{{/* $url := $p.Permalink  */}}
+	{{/* $tags := $p.Params.tags */}}
+	{{/* $description := $p.Params.description */}}
+	
+		<a id="MangaLink" href="{{/* $url */}}">
+			  <img id="post-thumbnail" class="img-responsive responsive--full" src='https://s3-us-west-2.amazonaws.com/images.hentaku.org/{{/*$p.Title*/}}/0001.jpg' alt="http://via.placeholder.com/350x150" style="max-width:100%; max-height:100%">
+		</a>
+	</div>
+	<div class="caption col-8">
+		<h5 id="title" class="title" style="">
+			{{/* $n */}}
+		</h5>
+		</br>
+		<p id="pages">Pages: </span>{{/*len $p.Pages*/}}</span></p>
+		<p id="tags">Tags: </span>{{/* partial "limited-tag-list.html" . */}} </span></p>
+		<!--{{/*if (isset $p.Params "description")*/}}<p>Description: </span>{{/*$description*/}}</span></p>{{/*end*/}}-->
+		<div class="post-meta">								
+		</div><!--/post-meta -->
+
+		<div class="the-content">
+		</div><!-- the-content -->
+
+		<div class="meta clearfix">
+			<div class="category"></div>
+			<div class="tags"></div>
+		</div><!-- Meta -->
+	</div>
+	</div>
+		<span style="float:right" tooltip="This post is brand new and has not been indexed in tags or search yet" ><i class="fas fa-fire"></i></span>
+
+</div>
+</div>
+<!--series thumbnail-->

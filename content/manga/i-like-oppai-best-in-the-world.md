@@ -1,0 +1,13 @@
+--- 
+slug: "i-like-oppai-best-in-the-world"
+title: "I Like OPPAI Best in the World!"
+publishdate: "2018-12-15"
+src: "https://365manga.net/manga/i-like-oppai-best-in-the-world"
+author: "Konbu Wakame"
+image: "https://data.365manga.net/images/thumbnails/32774-i-like-oppai-best-in-the-world.jpg"
+tags: ["Comedy","Ecchi","Mature","School life","Seinen","Shoujo ai"]
+chapters: ["Vol.2 Chapter 17 ","Vol.2 Chapter 16 ","Vol.2 Chapter 15 ","Chapter 14 ","Vol.2 Chapter 13 ","Vol.2 Chapter 12 ","Vol.2 Chapter 11 ","Chapter 10 ","Chapter 9.5 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1 ","Oneshot"]
+chapterlinks: ["https://365manga.net/i-like-oppai-best-in-the-world/chapter-17.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-16.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-15.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-14.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-13.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-12.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-11.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-10.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-9-5.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-9.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-8.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-7.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-6.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-5.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-4.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-3.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-2.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-1.html","https://365manga.net/i-like-oppai-best-in-the-world/chapter-0.html"]
+description: "The story about the cool Ichihara Chiaki and her big breasted friend, Harumi Hana. Chiaki is a member of the archery club and is also a huge breast fetishist. If she doesn't fondle breasts, she can't perform at her best in archery. The big breasted tsundere named Hana attends a different school than Chiaki, but still goes along with Chiaki's requests.
+Just how far will Hana go for Chiaki!?"
+---

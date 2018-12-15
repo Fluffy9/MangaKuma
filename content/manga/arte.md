@@ -1,0 +1,12 @@
+--- 
+slug: "arte"
+title: "Arte"
+publishdate: "2018-12-26"
+src: "https://365manga.net/manga/arte"
+author: "Ookubo Kei"
+image: "https://data.365manga.net/images/thumbnails/32656-arte.jpg"
+tags: ["Action","Adult","Cooking","Drama","Historical","Romance","Seinen"]
+chapters: ["Vol.6 Chapter 27: Catarina's Family ","Chapter 26: The Nursemaid ","Chapter 25: Catarina's Banquet ","Chapter 24: The Secret ","Chapter 23: That Little Pest"," Part 2 ","Chapter 22: That Little Pest"," Part 1 ","Chapter 21 ","Chapter 20 ","Chapter 19 ","Chapter 18 ","Chapter 16: The Nobleman Of Venice"," Part 1 ","Chapter 15.5: A Day With Arte (bonus Chapter) ","Vol.3 Chapter 15: The Guild"," Part 3 ","Chapter 14 ","Chapter 13 ","Chapter 12 ","Chapter 11 ","Chapter 10 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1"]
+chapterlinks: ["https://365manga.net/arte/chapter-27.html","https://365manga.net/arte/chapter-26.html","https://365manga.net/arte/chapter-25.html","https://365manga.net/arte/chapter-24.html","https://365manga.net/arte/chapter-23.html","https://365manga.net/arte/chapter-22.html","https://365manga.net/arte/chapter-21.html","https://365manga.net/arte/chapter-20.html","https://365manga.net/arte/chapter-19.html","https://365manga.net/arte/chapter-18.html","https://365manga.net/arte/chapter-16.html","https://365manga.net/arte/chapter-15-5.html","https://365manga.net/arte/chapter-15.html","https://365manga.net/arte/chapter-14.html","https://365manga.net/arte/chapter-13.html","https://365manga.net/arte/chapter-12.html","https://365manga.net/arte/chapter-11.html","https://365manga.net/arte/chapter-10.html","https://365manga.net/arte/chapter-9.html","https://365manga.net/arte/chapter-8.html","https://365manga.net/arte/chapter-7.html","https://365manga.net/arte/chapter-6.html","https://365manga.net/arte/chapter-5.html","https://365manga.net/arte/chapter-4.html","https://365manga.net/arte/chapter-3.html","https://365manga.net/arte/chapter-2.html","https://365manga.net/arte/chapter-1.html"]
+description: "Firenze, early 16th century. The birthplace of the renaissance era, where art is thriving. In one small corner of this vast city, one sheltered girl’s journey begins. She dreams of becoming an artist, an impossible career for a girl born into a noble family. In those days, art was an exclusively male profession, with woman facing strong discrimination. In spite of these challenges, Arte perseveres with hard work and a positive attitude!"
+---

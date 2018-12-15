@@ -1,0 +1,13 @@
+--- 
+slug: "yuu-mii"
+title: "Yuu & Mii"
+publishdate: "2018-12-19"
+src: "https://365manga.net/manga/yuu-mii"
+author: "Aro Hiroshi"
+image: "https://data.365manga.net/images/thumbnails/32726-yuu-mii.jpg"
+tags: ["Comedy","Ecchi","Romance","Shounen","Shounen ai","Supernatural"]
+chapters: ["Vol.4 Chapter 23: Yaninari Sou's Beach Trip (part 1) ","Vol.4 Chapter 22: The Annual Baseball Match ","Chapter 21: School Invasion ","Chapter 20: Atomemaru Appears ","Chapter 19: Yaninari Sou Report ","Chapter 18: Sending A Friend To Heaven ","Chapter 17: Ogura's Talent ","Chapter 16: Showdown Under The Moonlight ","Chapter 15: A Visitor ","Chapter 14: Ahhh"," The High School Love~ ","Chapter 13: Yuu Is The School Gang Leader ","Chapter 12: Battle Against The Pervert ","Chapter 11: The Haunted House ","Chapter 10: Old Friends ","Chapter 9: Diary Of The Marriage Interview ","Chapter 8: Yuwa"," The Iron Girl ","Chapter 7: School Chaos ","Chapter 6: Storming Entrance Exam Day ","Chapter 5: Mii On A Snowy Day ","Chapter 4: Teruaki Running Marathon ","Chapter 3: A Scary City ","Chapter 2: A Weird Landlord ","Chapter 1: I Came! I Saw It! I Was Haunted!"]
+chapterlinks: ["https://365manga.net/yuu-mii/chapter-23.html","https://365manga.net/yuu-mii/chapter-22.html","https://365manga.net/yuu-mii/chapter-21.html","https://365manga.net/yuu-mii/chapter-20.html","https://365manga.net/yuu-mii/chapter-19.html","https://365manga.net/yuu-mii/chapter-18.html","https://365manga.net/yuu-mii/chapter-17.html","https://365manga.net/yuu-mii/chapter-16.html","https://365manga.net/yuu-mii/chapter-15.html","https://365manga.net/yuu-mii/chapter-14.html","https://365manga.net/yuu-mii/chapter-13.html","https://365manga.net/yuu-mii/chapter-12.html","https://365manga.net/yuu-mii/chapter-11.html","https://365manga.net/yuu-mii/chapter-10.html","https://365manga.net/yuu-mii/chapter-9.html","https://365manga.net/yuu-mii/chapter-8.html","https://365manga.net/yuu-mii/chapter-7.html","https://365manga.net/yuu-mii/chapter-6.html","https://365manga.net/yuu-mii/chapter-5.html","https://365manga.net/yuu-mii/chapter-4.html","https://365manga.net/yuu-mii/chapter-3.html","https://365manga.net/yuu-mii/chapter-2.html","https://365manga.net/yuu-mii/chapter-1.html"]
+description: "The title 'Yuu & Mi' is a pun on the English phrase 'You and Me'. Aimu Yuu (remark: his name sounds like 'I'm you') is a boy who just moved into the equivalent of a boarding house.
+Everything is not as it first seems, even the boy. Living in the same room is a ghost (female) named Mi. The series is a combination of love, humour, and a general parody of anime and manga. There are a lot of weird characters in this manga."
+---

@@ -1,0 +1,38 @@
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+});
+	$(".title").text(function(index, currentText) {
+		if(currentText.length > 70){
+			return currentText.substr(0, 70)+"...";
+		}
+		return currentText;
+	});
+	$(".description").text(function(index, currentText) {
+		if(currentText.length > 70){
+			return currentText.substr(0, 70)+"...";
+		}
+		return currentText;
+	});
+</script>
+<!--series thumbnails-->
+	{{ $permalink := .Permalink }}
+	{{/* printf "%#v" .Title */}}
+	{{ $p := . }}
+	{{ $n := $p.Params.name }}
+	{{ $title := $p.Params.title }}
+	{{ $url := $p.Permalink  }}
+	{{ $tags := $p.Params.tags }}
+	{{ $description := $p.Params.description }}
+	<div class="col-lg-3 col-xs-8">
+		<div class="card">
+			<img class="lozad card-img-top img-responsive responsive--full" src='/Avocados/{{range (readDir "/static/Avocados" | shuffle | first 1)  }}{{- .Name -}}{{end}}' data-src='http://images.weserv.nl/?url=https://hentaku.sfo2.cdn.digitaloceanspaces.com/{{- $p.Title -}}/0001.jpg&w=200' onerror="this.onerror=null;this.src='https://hentaku.sfo2.cdn.digitaloceanspaces.com/{{- $p.Title -}}/0001.jpg';" title="thumbnail for '{{- $n -}}' hentai manga" alt="Cannot find '{{- $n -}}' hentai thumbnail" style="max-width:100%; max-height:100%">
+			<div class="card-body">
+			<h5 class="card-title title">{{- $n -}}</h5>
+			<p class="card-text description">{{- $description -}}</p>
+			<p class="card-text">{{- partial "limited-tag-list.html" . -}}</p>
+			<a href="/manga/{{$title}}" class="btn btn-primary">Read More</a>
+			</div>
+		</div>	
+	</div>
+<!--series thumbnail-->

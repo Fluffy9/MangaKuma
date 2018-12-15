@@ -1,0 +1,37 @@
+{{ $alphabet := slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"}}
+{{ $tagcolor := slice "1" "2" "3" "4" "5" "6" "7" "8" "8" "7" "6" "5" "4" "3" "2" "1" "1" "2" "3" "4" "5" "6" "7" "8" "8" "7"}}
+{{ range .Params.tags }}
+	{{$term := . }}
+	{{range $index, $a := $alphabet}}
+		{{if eq (hasPrefix (lower $term) (lower (string .)) ) true}}
+			{{ $color := index $tagcolor $index}}
+			{{$.Scratch.Add "c" $color}}
+		{{ end }}
+	{{ end }}
+	
+	
+{{/* Functionality for the gendered tags */}}
+		{{if (gt (len . ) 4)}}
+		{{if eq (lower (substr . (sub (len . ) 4) 4)) "male"}}
+			{{if and (eq (lower (substr . (sub (len  . ) 7) 7)) "_female") (gt (len . ) 7)}}
+				<a style="display:inline-block;" title="{{ humanize (index $.Site.Data.definitions (lower (substr . 0 -7)))}}" class='tag tag{{$.Scratch.Get "c"}}' href="/tags/{{ . | urlize }}">{{(title (replace (lower .) "_female" " ♀") )}}</a>
+			{{else}}
+				{{if and (eq (lower (substr . (sub (len . ) 5) 5)) "_male") (gt (len . ) 5)}}
+					<a style="display:inline-block;" title="{{ humanize (index $.Site.Data.definitions (lower (substr . 0 -5)))}}" class='tag tag{{$.Scratch.Get "c"}}' href="/tags/{{ . | urlize }}">{{(title (replace (lower .) "_male" " ♂") )}}</a>
+				{{else}}
+					<a style="display:inline-block;" title="{{ index $.Site.Data.definitions (lower . )}}" class='tag tag{{$.Scratch.Get "c"}}' href="/tags/{{ . | urlize }}">{{(title . )}}</a>
+				{{end}}
+			{{end}}
+		{{else}}
+			<a style="display:inline-block;" title="{{ index $.Site.Data.definitions (lower . )}}" class='tag tag{{$.Scratch.Get "c"}}' href="/tags/{{ . | urlize }}">{{(title . )}}</a>
+		{{end}}
+	{{else}}
+		<a style="display:inline-block;" title="{{ index $.Site.Data.definitions (lower . )}}" class='tag tag{{$.Scratch.Get "c"}}' href="/tags/{{ . | urlize }}">{{(title . )}}</a>
+	{{end}}
+{{/* Functionality for the gendered tags */}}
+
+
+		
+		{{$.Scratch.Delete "c"}}
+
+{{ end }}

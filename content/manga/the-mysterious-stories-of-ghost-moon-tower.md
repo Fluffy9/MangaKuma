@@ -1,0 +1,12 @@
+--- 
+slug: "the-mysterious-stories-of-ghost-moon-tower"
+title: "The Mysterious Stories of Ghost Moon Tower"
+publishdate: "2019-01-06"
+src: "https://365manga.net/manga/the-mysterious-stories-of-ghost-moon-tower"
+author: "Ima Ichiko"
+image: "https://data.365manga.net/images/thumbnails/32553-the-mysterious-stories-of-ghost-moon-tower.jpg"
+tags: ["Comedy","Drama","Historical","Mystery","Shounen ai","Supernatural"]
+chapters: ["Vol.1 Chapter 16 ","Chapter 15 ","Chapter 14 ","Chapter 13 ","Chapter 12 ","Chapter 11 ","Chapter 10 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1"]
+chapterlinks: ["https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-16.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-15.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-14.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-13.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-12.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-11.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-10.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-9.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-8.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-7.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-6.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-5.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-4.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-3.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-2.html","https://365manga.net/the-mysterious-stories-of-ghost-moon-tower/chapter-1.html"]
+description: "Shouichirou Tsurugi is the master of an well-established, upscale miso shop. He's a noted 'prodigal son' and an eccentric 'Jack of all trades, master of none.' He's also the patron of a suspicious male geisha, Yosaburou, who will do anything for money and has no talent, except for telling ghost stories. It may or may not be true that the young master is making amorous advances toward Yosaburou! Every night, the parlor of a restaurant in the red light district called Ghost Moon Tower showcases mysterious tales that interweave 'strange things' and people's other desires."
+---

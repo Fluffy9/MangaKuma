@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{ .Title }} </title>
+
+    <!-- Bootstrap core CSS -->
+	
+    <!-- Custom styles for this template -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src='https://unpkg.com/frosted-glass/dist/frostedglass.js'></script>
+	<!--<script src="/js/direct.js" data-user="11012501" data-debug="1" data-level='50'></script>-->
+	<!--<script src="https://snipli.com/FLFhD" data-user="11012501" data-level="50"></script>-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<META NAME="Description" CONTENT="View hentai manga / doujinshi for FREE on Hentaku.org. No annoying ads, just content.">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+	<style>body {font-size: 80px; background-color: #F0F0F0 }img {box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1); border-radius: 5px; border-style: solid; border-width: 1px; border-color: #DDDDDD}.next, .prev {position: absolute; top: 0; bottom: 0; z-index: 10; opacity: 0; transition: opacity 0.2s}.next:hover, .prev:hover {opacity: 1}.prev {left: 0; right: 50%; text-align:left}.next {left: 50%; right: 0; text-align:right}.arrow {position: fixed; top: 50%; margin-top: -50px; z-index: -1; color: #888888}.left {left: 0}.right {right: 0}</style>
+	<style>
+	.arrow{
+	position: relative;
+	top: 50%;
+
+	}
+	img {
+		max-width: 70%;
+	}
+	body, html{
+		background-color: #F0F0F0;
+		font-size: unset;
+	}
+	.DarkTheme{
+		background-color: #141518;
+		-webkit-transition:0.4s;
+		-moz-transition:0.4s;
+		-ms-transition:0.4s;
+		-o-transition:0.4s;
+		transition:0.4s;
+	}
+	.LightTheme{
+		background-color: #F0F0F0;	
+		-webkit-transition:0.4s;
+		-moz-transition:0.4s;
+		-ms-transition:0.4s;
+		-o-transition:0.4s;
+		transition:0.4s;
+	}
+	.DarkThemeMenu{
+		background-color: #34373c;
+		color: rgba(255,255,255,.5);
+		-webkit-transition:0.4s;
+		-moz-transition:0.4s;
+		-ms-transition:0.4s;
+		-o-transition:0.4s;
+		transition:0.4s;
+	}
+	.LightThemeMenu{
+		background-color: white;
+		color: #34373c;
+		-webkit-transition:0.4s;
+		-moz-transition:0.4s;
+		-ms-transition:0.4s;
+		-o-transition:0.4s;
+		transition:0.4s;
+	}
+
+	#topbar{
+		background-color: white;
+	}
+	#topbar a.nav-link:hover {
+	}
+	#topbar li.nav-item:hover, #logocontainer.nav-item:hover {
+		background-color:unset;
+		border-radius:unset;
+	}
+	.blur-content{
+		left: -10px !important;
+		top: 56px !important;
+	}
+	</style>
+</head>
+<frosted-glass-container>
+<body>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-auth.js"></script>
+<script>
+
+
+firebase.initializeApp({
+	apiKey: "AIzaSyA2knuQNflWKOmQAjsSKNK0fUlwecfo37E",
+	authDomain: "hentaku-72da4.firebaseapp.com",
+	projectId: "hentaku-72da4",
+});
+
+// Initialize Cloud Firestore through Firebase
+const db = firebase.firestore();
+const settings = {/* your settings... */ timestampsInSnapshots: true};
+db.settings(settings);
+</script>
+<script>
+// getImages
+</script>
+
+<script>
+ function getParameterByName(name, url) {
+     if (!url) url = window.location.href;
+     name = name.replace(/[\[\]]/g, "\\$&");
+     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+         results = regex.exec(url);
+     if (!results) return null;
+     if (!results[2]) return '';
+     return decodeURIComponent(results[2].replace(/\+/g, " "));
+ }
+$(document).ready(function(){
+	manga = getParameterByName("manga");
+	chapter = getParameterByName("chapter");
+	src = encodeURIComponent("https://365manga.net/" + manga + "/" + chapter);
+	var url = "http://api.mangakuma.net/chapter?url=" + src;
+	$.getJSON(url, function(response) {
+		console.log(response);
+		images = response[0].image;
+		permalink = "/manga/" + manga;
+		if(images.length > 0){
+			for(j = 1; j < images.length; j++){
+				it = $("#copy").clone();
+				it = $(it).html().replace(/\{\$title\}/gi,manga);
+				it = it.replace(/\{\.Title\}/gi,('000000' + j).slice(-4));
+				str = decodeURIComponent(images[j]);
+				str = str.substring(decodeURIComponent(images[j]).indexOf("=") + 1);
+				str = str.substring(str.indexOf("=") + 1);
+				str = str.substring(str.indexOf("=") + 1);
+				it = it.replace(/\{image\}/gi,str);
+				it = it.replace(/\{nxt\}/gi,j);
+				it = it.replace(/\{cur\}/gi,j-1);
+				it = it.replace(/\{pre\}/gi,j-2);
+				$($.parseHTML(it)).appendTo(".generate");
+			}
+		}
+		$(".manga").html(manga);
+		$("#return").attr("href",permalink);
+	});	
+});
+
+</script>
+    <frosted-glass id="topbar" style="height: 60px" class="navbar navbar-expand-md fixed-top" blur-amount="10px" overlay-color="#ffffff52">
+		<nav id="menu" class="navbar">
+            <a id="logocontainer" class="navbar-brand" href="/">
+				<!--<div style="background-image:url(halloweenhat.png);width: 40px;
+					height: 50px;
+					background-size: contain;
+					background-repeat: no-repeat;
+					position: absolute;
+					top: 5px;
+					left: 30px;
+					transform: rotate(-30deg);" ></div>-->
+                <div class="nav-item logo">{{- .Site.Title -}}</div>
+            </a>
+            <div id="navbarResponsive">
+                <ul id="nav-options" class="navbar-nav">
+                    <li class="nav-item">
+                        <a style="color: #34373c" id="return" class="nav-link" href="#"><i class="fas fa-home"></i></a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a id="sun" onclick="toggle()" style="color: #34373c; z-index:1" class="nav-link"><i class="fas fa-sun"></i></a>
+                    </li>-->
+				</ul>
+            </div>
+        </nav>
+    </frosted-glass>
+<div class="generate">
+
+</div>
+<div id="copy" style="display:none">
+	<div id="_{cur}" align="center" style="position:relative; margin: 50px 0">
+	 <a href="#_{pre}">
+		<span class="prev">
+		   <div class="arrow left">❮</div>
+		</span>
+	 </a>
+	 <a href="#_{nxt}">
+		<span class="next">
+		   <div class="arrow right">❯</div>
+		</span>
+	 </a>
+	 <img class="lozad" data-src='/Avocados/{{range (readDir "/static/Avocados" | shuffle | first 1)  }}{{.Name}}{{end}}' src="{image}">
+	</div>
+</div>
+<script>
+	!function(t, e) {
+		"function" == typeof define && define.amd ? define([], e()) : "object" == typeof module && module.exports ? module.exports = e() : function n() {
+			document && document.body ? t.zenscroll = e() : setTimeout(n, 9)
+		}()
+	}(this, function() {
+		"use strict";
+		var t = function(t) {
+			return "getComputedStyle"in window && "smooth" === window.getComputedStyle(t)["scroll-behavior"]
+		};
+		if ("undefined" == typeof window || !("document"in window))
+			return {};
+		var e = function(e, n, o) {
+			n = n || 999,
+			o || 0 === o || (o = 9);
+			var i, r = function(t) {
+				i = t
+			}, u = function() {
+				clearTimeout(i),
+				r(0)
+			}, c = function(t) {
+				return Math.max(0, e.getTopOf(t) - o)
+			}, f = function(o, i, c) {
+				if (u(),
+				0 === i || i && i < 0 || t(e.body))
+					e.toY(o),
+					c && c();
+				else {
+					var f = e.getY()
+					  , a = Math.max(0, o) - f
+					  , l = (new Date).getTime();
+					i = i || Math.min(Math.abs(a), n),
+					function t() {
+						r(setTimeout(function() {
+							var n = Math.min(1, ((new Date).getTime() - l) / i)
+							  , o = Math.max(0, Math.floor(f + a * (n < .5 ? 2 * n * n : n * (4 - 2 * n) - 1)));
+							e.toY(o),
+							n < 1 && e.getHeight() + o < e.body.scrollHeight ? t() : (setTimeout(u, 99),
+							c && c())
+						}, 9))
+					}()
+				}
+			}, a = function(t, e, n) {
+				f(c(t), e, n)
+			}, l = function(t, n, i) {
+				var r = t.getBoundingClientRect().height
+				  , u = e.getTopOf(t) + r
+				  , l = e.getHeight()
+				  , s = e.getY()
+				  , d = s + l;
+				c(t) < s || r + o > l ? a(t, n, i) : u + o > d ? f(u - l + o, n, i) : i && i()
+			}, s = function(t, n, o, i) {
+				f(Math.max(0, e.getTopOf(t) - e.getHeight() / 2 + (o || t.getBoundingClientRect().height / 2)), n, i)
+			};
+			return {
+				setup: function(t, e) {
+					return (0 === t || t) && (n = t),
+					(0 === e || e) && (o = e),
+					{
+						defaultDuration: n,
+						edgeOffset: o
+					}
+				},
+				to: a,
+				toY: f,
+				intoView: l,
+				center: s,
+				stop: u,
+				moving: function() {
+					return !!i
+				},
+				getY: e.getY,
+				getTopOf: e.getTopOf
+			}
+		}
+		  , n = document.documentElement
+		  , o = function() {
+			return window.scrollY || n.scrollTop
+		}
+		  , i = e({
+			body: document.scrollingElement || document.body,
+			toY: function(t) {
+				window.scrollTo(0, t)
+			},
+			getY: o,
+			getHeight: function() {
+				return window.innerHeight || n.clientHeight
+			},
+			getTopOf: function(t) {
+				return t.getBoundingClientRect().top + o() - n.offsetTop
+			}
+		});
+		if (i.createScroller = function(t, o, i) {
+			return e({
+				body: t,
+				toY: function(e) {
+					t.scrollTop = e
+				},
+				getY: function() {
+					return t.scrollTop
+				},
+				getHeight: function() {
+					return Math.min(t.clientHeight, window.innerHeight || n.clientHeight)
+				},
+				getTopOf: function(t) {
+					return t.offsetTop
+				}
+			}, o, i)
+		}
+		,
+		"addEventListener"in window && !window.noZensmooth && !t(document.body)) {
+			var r = "scrollRestoration"in history;
+			r && (history.scrollRestoration = "auto"),
+			window.addEventListener("load", function() {
+				r && (setTimeout(function() {
+					history.scrollRestoration = "manual"
+				}, 9),
+				window.addEventListener("popstate", function(t) {
+					t.state && "zenscrollY"in t.state && i.toY(t.state.zenscrollY)
+				}, !1)),
+				window.location.hash && setTimeout(function() {
+					var t = i.setup().edgeOffset;
+					if (t) {
+						var e = document.getElementById(window.location.href.split("#")[1]);
+						if (e) {
+							var n = Math.max(0, i.getTopOf(e) - t)
+							  , o = i.getY() - n;
+							0 <= o && o < 9 && window.scrollTo(0, n)
+						}
+					}
+				}, 9)
+			}, !1);
+			var u = new RegExp("(^|\\s)noZensmooth(\\s|$)");
+			window.addEventListener("click", function(t) {
+				for (var e = t.target; e && "A" !== e.tagName; )
+					e = e.parentNode;
+				if (!(!e || 1 !== t.which || t.shiftKey || t.metaKey || t.ctrlKey || t.altKey)) {
+					if (r)
+						try {
+							history.replaceState({
+								zenscrollY: i.getY()
+							}, "")
+						} catch (t) {}
+					var n = e.getAttribute("href") || "";
+					if (0 === n.indexOf("#") && !u.test(e.className)) {
+						var o = 0
+						  , c = document.getElementById(n.substring(1));
+						if ("#" !== n) {
+							if (!c)
+								return;
+							o = i.getTopOf(c)
+						}
+						t.preventDefault();
+						var f = function() {
+							window.location = n
+						}
+						  , a = i.setup().edgeOffset;
+						a && (o = Math.max(0, o - a),
+						f = function() {
+							history.pushState(null, "", n)
+						}
+						),
+						i.toY(o, null, f)
+					}
+				}
+			}, !1)
+		}
+		return i
+	});
+	zenscroll.setup(100)	  
+</script>
+
+</body>
+</frosted-glass-container>

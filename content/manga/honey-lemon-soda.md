@@ -1,0 +1,12 @@
+--- 
+slug: "honey-lemon-soda"
+title: "Honey Lemon Soda"
+publishdate: "2018-12-12"
+src: "https://365manga.net/manga/honey-lemon-soda"
+author: "Murata Mayu"
+image: "https://data.365manga.net/images/thumbnails/32799-honey-lemon-soda.jpg"
+tags: ["Drama","Romance","School life","Shoujo","Shoujo ai"]
+chapters: ["Chapter 27 ","Chapter 26 ","Chapter 25 ","Chapter 24 ","Chapter 23 ","Chapter 22 ","Chapter 21 ","Chapter 20 ","Chapter 19 ","Chapter 18 ","Chapter 17 ","Chapter 16 ","Chapter 15 ","Chapter 14 ","Chapter 13 ","Chapter 12 ","Chapter 11 ","Chapter 010 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Vol.2 Chapter 6 ","Chapter 5 ","Vol.1 Chapter 4 ","Chapter 3 ","Vol.1 Chapter 2: Sparkle 2 ","Vol.1 Chapter 1"]
+chapterlinks: ["https://365manga.net/honey-lemon-soda/chapter-27.html","https://365manga.net/honey-lemon-soda/chapter-26.html","https://365manga.net/honey-lemon-soda/chapter-25.html","https://365manga.net/honey-lemon-soda/chapter-24.html","https://365manga.net/honey-lemon-soda/chapter-23.html","https://365manga.net/honey-lemon-soda/chapter-22.html","https://365manga.net/honey-lemon-soda/chapter-21.html","https://365manga.net/honey-lemon-soda/chapter-20.html","https://365manga.net/honey-lemon-soda/chapter-19.html","https://365manga.net/honey-lemon-soda/chapter-18.html","https://365manga.net/honey-lemon-soda/chapter-17.html","https://365manga.net/honey-lemon-soda/chapter-16.html","https://365manga.net/honey-lemon-soda/chapter-15.html","https://365manga.net/honey-lemon-soda/chapter-14.html","https://365manga.net/honey-lemon-soda/chapter-13.html","https://365manga.net/honey-lemon-soda/chapter-12.html","https://365manga.net/honey-lemon-soda/chapter-11.html","https://365manga.net/honey-lemon-soda/chapter-010.html","https://365manga.net/honey-lemon-soda/chapter-9.html","https://365manga.net/honey-lemon-soda/chapter-8.html","https://365manga.net/honey-lemon-soda/chapter-7.html","https://365manga.net/honey-lemon-soda/chapter-6.html","https://365manga.net/honey-lemon-soda/chapter-5.html","https://365manga.net/honey-lemon-soda/chapter-4.html","https://365manga.net/honey-lemon-soda/chapter-3.html","https://365manga.net/honey-lemon-soda/chapter-2.html","https://365manga.net/honey-lemon-soda/chapter-1.html"]
+description: "Honey Lemon Soda manga summary: Honey Lemon Soda summary is updating. Come visit MangaNelo.com sometime to read the latest chapter of Honey Lemon Soda. If you have any question about this manga, Please don't hesitate to contact us or translate team. Hope you enjoy it."
+---

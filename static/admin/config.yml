@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: avocado # Branch to update (optional; defaults to master)
+  # This line should *not* be indented
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "manga" # Used in routes, e.g., /admin/collections/blog
+    label: "Manga" # Used in the UI
+    folder: "content/manga" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title (Must match file name)", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Name (Format: English name | Japanese Name | Romanji)", name: "name", widget: "string"}
+      - {label: "Author (The artist or unknown)", name: "author", widget: "string"}
+      - {label: "Images (Link to imgur, ehentai or wherever it's hosted)", name: "src", widget: "string", required: false}
+      - {label: "Tags (Atleast 1 tag. Comma separated  list. Tag_Female/Tag_Male for gender)", name: "tags", widget: "list"}
+      - {label: "Collection (List title of other manga in the series in order. Tag formatting)", name: "collection", widget: "list", required: false}
+      - {label: "Description (optional)", name: "description", widget: "markdown", required: false}
+

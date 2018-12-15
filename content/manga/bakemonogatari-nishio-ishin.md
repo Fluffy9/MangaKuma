@@ -1,0 +1,12 @@
+--- 
+slug: "bakemonogatari-nishio-ishin"
+title: "Bakemonogatari (Nishio Ishin)"
+publishdate: "2018-12-15"
+src: "https://365manga.net/manga/bakemonogatari-nishio-ishin"
+author: "Oh! Great, Nishio Ishin"
+image: "https://data.365manga.net/images/thumbnails/32775-bakemonogatari-nishio-ishin.jpg"
+tags: ["Action","Comedy","Drama","Fantasy","Mystery","Romance","School life","Shounen","Shounen ai","Supernatural"]
+chapters: ["Vol.2 Chapter 17 ","Vol.2 Chapter 16 ","Chapter 15 ","Chapter 14 ","Chapter 13 ","Chapter 12 ","Chapter 11 ","Chapter 10 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1"]
+chapterlinks: ["https://365manga.net/bakemonogatari-nishio-ishin/chapter-17.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-16.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-15.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-14.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-13.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-12.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-11.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-10.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-9.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-8.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-7.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-6.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-5.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-4.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-3.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-2.html","https://365manga.net/bakemonogatari-nishio-ishin/chapter-1.html"]
+description: "Koyomi Araragi, a third year high school student who is almost human again after briefly becoming a vampire. One day, a classmate named Hitagi Senjougahara, who infamously never talks to anyone, falls down the stairs into Koyomi's arms. He discovers that Hitagi weighs next to nothing, in defiance of physics. Despite being threatened by her, Koyomi offers his help, and introduces her to Meme Oshino, a middle-aged homeless man who helped him stop being a vampire."
+---

@@ -1,0 +1,158 @@
+
+{{ $p := . }}
+{{ $title := $p.Params.title}}
+{{ $url := "http://api.mangakuma.net/manga?manga="}}
+{{$series := getJSON $url (replace $p.Params.src "https://365manga.net/manga/" "")}}
+
+
+	{{ $title := $.Title }}
+	{{ $date := (dateFormat "Monday, Jan 2, 2006" .Date) }}
+	{{ $description := (printf "%s" .Description) }}
+	{{ $name := .Params.name }}
+	{{ $japanesename := split $name "|" }}
+	{{ $tags := .Params.tags }}
+	{{ $permalink := (printf "%s" .Permalink) }}
+	{{ $url := (printf "/manga/%s" (lower $title)) }}
+	{{ $imgur := .Params.imgur }}
+	{{ $pixeldrain := .Params.pixeldrain }}
+	{{/* $folder := (printf "/static/manga/%s" (lower $title)) */}}
+	{{/* $files := readDir $folder */}}				
+	{{/* $pages := len $files */}}		
+	{{/* printf "%#v" .Params.thumb */}}
+{{- partialCached "header.html" . -}}
+	<script>
+	window.addEventListener('message',function(e) {
+		var key = e.message ? 'message' : 'data';
+		var data = e[key].split("/");
+		percent = (data[0]/data[1])*100;
+		$($(".progress-bar")[0]).attr("aria-valuenow", percent);
+		$($(".progress-bar")[0]).attr("style", "width:" + percent + "px");
+		$($(".sr-only")[0]).text(percent);
+		//run function//
+	},false);
+	$( document ).ready(function() {
+		
+		$("#download").click(function(){
+			$(".source").hide();
+			$("#download_bar").show();
+			var iframe = $("<iframe />",{ src: "http://d.hentaku.org/#/{{ $imgur }}", style: "width:100%; display:none"}).appendTo("body");
+			iframe.ready(function(){
+				
+			});
+		});
+	});
+	
+	</script>
+	<div class="row">
+	<!-- Left -->
+	<div id="left" class="col-md-4">
+	<div id="topinfo" class=" col-xs-6">
+		<img class="img-fluid img-thumbnail" title="thumbnail for '{{$name}}' hentai manga" alt="cannot find '{{$name}}' hentai thumbnail" src='{{.Params.image}}' onerror="this.onerror=null;this.src='https://hentaku.sfo2.cdn.digitaloceanspaces.com/{{$title}}/0001.jpg';">
+	</div>
+
+	</div>
+	<!-- Left -->
+	<div id="right" class="col-md-8">
+		<div>
+			<h1 class="detailtitle"> {{ .Name }} </h1>
+			
+			</br>
+			<div class="detail"><div class="label">Uploaded: </div><div class="info"> {{- (dateFormat "Monday, Jan 2, 2006" .PublishDate) -}} </div></div>
+			<div class="detail"><div class="label">Artist: </div><div class="info"><span class="label">{{ .Params.author }}</span></div></div>
+			<div class="detail"><div class="label">Tags: </div><div class="info"> {{- partial "tag-list.html" . -}} </div></div>
+			<div class="detail"><div class="label">Description: </div><div class="info"><span class="label">{{ .Params.description }}</span></div></div>
+						
+		</div>
+	</div>
+	<div id="bottom">
+	
+	<style>
+		#Collection{
+			margin:20px auto;
+			margin-bottom:40px;
+		}
+		#Collection h3{
+			text-align:left;
+			width:100%;
+			border-bottom: solid var(--color3);
+		}
+		#Collection table{
+			margin-top:25px;
+		}
+		#Collection td, th {
+			border: solid black;
+			text-align: left;
+			padding: 8px;
+		}
+		#Collection tr{
+			background-color: var(--blue);
+			
+		}
+		#Collection tr:first-child {
+			background-color: var(--brown) !important;
+			color: white
+		}
+		#Collection tr:hover{
+			background-color:var(--light-blue);
+		}
+		#Collection .current {
+			background-color: var(--brown) !important;
+		}
+		#Collection .current:hover {
+			background-color: var(--brown) !important;
+		}
+
+	</style>
+	{{if (isset .Params "chapters")}}
+	<div id="Collection">
+	<h3>Collection Details</h3>
+		<table style="width:100%">
+		  <tr>
+			<th>#</th>
+			<th>Name</th> 
+		  </tr>
+		  {{ .Params.chapters}}
+		{{ range $index, $element := .Params.chapters }}
+		  <tr onclick="window.location='/reader/?manga={{$.Params.slug}}&chapter={{ replace (index $.Params.chapterlinks $index) ( print "https://365manga.net/" $.Params.slug "/") ""}}'" style="cursor:pointer;">
+			<td>{{- add $index 1 -}}</td>
+			<td>{{- $element -}}</td> 
+		  </tr>
+		{{ end }}
+</table>
+	</div>
+{{ end }}
+</br>
+<div id="related"  class="text-center text-lg-left">
+	<h3 class="detailtitle" style="width:100%; text-align:left;">Related</h3>
+	</br>
+	<div class="row">
+	{{/* $related := (where .Site.Pages "Kind" "section").Related . */}}
+	{{/* $related := (where (where $.Site.Pages "Kind" "taxonomy") "Data.Term" "!=" "manga").Related . */}}
+	{{ $related := .Site.RegularPages.Related . | first 3}}
+	{{ with $related}}
+		{{ range . }}
+			{{- partial "series.html" . -}}
+		{{ end }}
+	{{ end }}
+	</div>
+</div>
+<script data-isso="https://comments.comment.sh/hentaku"
+	src="https://comments.comment.sh/hentaku/js/embed.min.js"></script>
+
+</br>
+<h3 class="detailtitle" style="text-align:left;">Comments</h3>
+</br>
+
+<section id="isso-thread"></section>
+
+<div id="copy" style="display:none">
+	<div class="thumb col-lg-2 col-md-2 col-xs-4">
+		<a href="{.Permalink}" class="thumbnail d-block mb-4 h-100">
+			<!--<img class="img-fluid" title="image number {{.Title}} for hentai manga '{{$name}}'" alt="cannot find '{{$name}}' hentai thumbnails" src='http://images.hentaku.org/resize/400x400/{{$title}}/{{.Title}}.jpg' onerror="this.onerror=null;this.src='https://s3-us-west-2.amazonaws.com/images.hentaku.org/{{$title}}/{{.Title}}.jpg';">-->
+			<img class="img-fluid lozad" title="image number '{.Title}' for hentai manga '{$name}'" alt="cannot find '{$name}' hentai thumbnails" src='/Avocados/{{range (readDir "/static/Avocados" | shuffle | first 1)  }}{{.Name}}{{end}}' data-src='http://images.weserv.nl/?url=https://hentaku.sfo2.cdn.digitaloceanspaces.com/{$title}/{.Title}.jpg&w=400' onerror="this.onerror=null;this.src='https://hentaku.sfo2.cdn.digitaloceanspaces.com/{$title}/{.Title}.jpg';">
+		</a>
+	</div>
+</div>
+	</div>
+</div>
+{{- partial "footer.html" . -}}

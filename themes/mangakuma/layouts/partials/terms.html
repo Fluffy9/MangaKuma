@@ -1,0 +1,74 @@
+{{partial "header.html" . }}
+<style>
+#TagSort{
+padding-bottom:10px;
+}
+#TagSort li{
+padding: 0px 5px;
+display:inline;
+font-size:large;
+padding: 5px;
+
+}
+li{
+list-style:none;
+}
+table, th, td {
+    border-top: 1px solid white;
+    border-collapse: collapse;
+	padding:5px;
+}
+</style>
+	<div id="page" class="row">
+			<h1 class="detailtitle" style="width:100%">All Tags </h1>
+	<ul id="TagSort" style="display:inline; list-style:none; width:100%">
+	<!--(union (where (.Data.Pages.ByTitle) "Title" "<" "Parody") (where (.Data.Pages.ByTitle) "Title" ">" "Parodyzzzzzzz"))-->
+	{{ $paginator := .Paginate (union (union (where (.Data.Pages.ByTitle) "Title" "<" "Parody") (where (.Data.Pages.ByTitle) "Title" ">" "Parodyzzzzzzz")) (intersect (where (.Data.Pages.ByTitle) "Title" "<" "Parodyzzzzzzz") (where (.Data.Pages.ByTitle) "Title" ">" "Parody"))) 50}}
+	{{partialCached "tagnav.html" . }}
+	</ul>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Total</th> 
+    <th>Definition</th>
+  </tr>
+{{ range $paginator.Pages }}
+{{ $title := .Title}}
+{{ $pages := .Pages }}
+{{ $permalink := .Permalink}}
+	  <tr>
+		{{if (gt (len $title) 4)}}
+			{{if eq (substr $title (sub (len $title) 4) 4) "male"}}
+				{{if and (eq (substr $title (sub (len $title) 7) 7) "_female") (gt (len $title) 7)}}
+					<td id="{{substr $title 0 1}}"><a href="{{ replace $permalink "_female" "_female"}}">{{ replace $title "_female" " ♀"}}</a></td>
+					<td>{{ $pages }}</td> 
+					<td><span >(Female) {{ humanize (index $.Site.Data.definitions (lower (substr $title 0 -7)))}}</span></td>
+				{{else}}
+					{{if and (eq (substr $title (sub (len $title) 5) 5) "_male") (gt (len $title) 5)}}
+						<td id="{{substr $title 0 1}}"><a href="{{ replace $permalink "_male" "_male"}}">{{ replace $title "_male" " ♂"}}</a></td>
+						<td>{{ $pages }}</td> 
+						<td><span >(Male) {{ humanize (index $.Site.Data.definitions (lower (substr $title 0 -5)))}}</span></td>
+					{{else}}
+						<td id="{{substr $title 0 1}}"><a href="{{ $permalink }}">{{ $title }}</a></td>
+						<td>{{ $pages }}</td> 
+						<td><span >{{ humanize (index $.Site.Data.definitions (lower $title))}}</span></td>
+					{{end}}
+				{{end}}
+			{{else}}
+				<td id="{{substr $title 0 1}}"><a href="{{ $permalink }}">{{ $title }}</a></td>
+				<td>{{ $pages }}</td> 
+				<td><span >{{ humanize (index $.Site.Data.definitions (lower $title))}}</span></td>
+			{{end}}
+		{{else}}
+				<td id="{{substr $title 0 1}}"><a href="{{ $permalink }}">{{ $title }}</a></td>
+				<td>{{ $pages }}</td> 
+				<td><span >{{ humanize (index $.Site.Data.definitions (lower $title))}}</span></td>
+		{{end}}
+	  </tr>
+{{ end }}
+</table>
+{{ partial "pagination.html" . }}
+
+</div>
+
+{{partial "footer.html" . }}

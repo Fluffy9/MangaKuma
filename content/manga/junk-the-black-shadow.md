@@ -1,0 +1,12 @@
+--- 
+slug: "junk-the-black-shadow"
+title: "Junk the Black Shadow"
+publishdate: "2018-12-26"
+src: "https://365manga.net/manga/junk-the-black-shadow"
+author: "NAKAO Takuya"
+image: "https://data.365manga.net/images/thumbnails/32663-junk-the-black-shadow.jpg"
+tags: ["Action","Adventure","Shounen","Shounen ai"]
+chapters: ["Chapter 20 ","Chapter 19 ","Chapter 18: A Knight's Pride ","Chapter 17 ","Chapter 16: Wands And Talent ","Chapter 15 ","Chapter 14 ","Chapter 13 ","Chapter 12.5 ","Chapter 12 ","Chapter 11: Counterattack ","Chapter 10: Flower Hunt ","Chapter 9 ","Chapter 8 ","Chapter 7: The Melancholy Of Iris ","Chapter 6.5 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1.5 ","Chapter 1"]
+chapterlinks: ["https://365manga.net/junk-the-black-shadow/chapter-20.html","https://365manga.net/junk-the-black-shadow/chapter-19.html","https://365manga.net/junk-the-black-shadow/chapter-18.html","https://365manga.net/junk-the-black-shadow/chapter-17.html","https://365manga.net/junk-the-black-shadow/chapter-16.html","https://365manga.net/junk-the-black-shadow/chapter-15.html","https://365manga.net/junk-the-black-shadow/chapter-14.html","https://365manga.net/junk-the-black-shadow/chapter-13.html","https://365manga.net/junk-the-black-shadow/chapter-12-5.html","https://365manga.net/junk-the-black-shadow/chapter-12.html","https://365manga.net/junk-the-black-shadow/chapter-11.html","https://365manga.net/junk-the-black-shadow/chapter-10.html","https://365manga.net/junk-the-black-shadow/chapter-9.html","https://365manga.net/junk-the-black-shadow/chapter-8.html","https://365manga.net/junk-the-black-shadow/chapter-7.html","https://365manga.net/junk-the-black-shadow/chapter-6-5.html","https://365manga.net/junk-the-black-shadow/chapter-6.html","https://365manga.net/junk-the-black-shadow/chapter-5.html","https://365manga.net/junk-the-black-shadow/chapter-4.html","https://365manga.net/junk-the-black-shadow/chapter-3.html","https://365manga.net/junk-the-black-shadow/chapter-2.html","https://365manga.net/junk-the-black-shadow/chapter-1-5.html","https://365manga.net/junk-the-black-shadow/chapter-1.html"]
+description: "The manga follows the story of Junk, a young knight that tries to distance himself from the shadow of his legendary father and future expectations."
+---

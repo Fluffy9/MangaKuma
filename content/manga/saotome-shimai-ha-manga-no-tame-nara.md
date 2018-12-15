@@ -1,0 +1,12 @@
+--- 
+slug: "saotome-shimai-ha-manga-no-tame-nara"
+title: "Saotome Shimai Ha Manga no Tame Nara!?"
+publishdate: "2018-12-15"
+src: "https://365manga.net/manga/saotome-shimai-ha-manga-no-tame-nara"
+author: "Ryouhei Yamamoto"
+image: "https://data.365manga.net/images/thumbnails/32766-saotome-shimai-ha-manga-no-tame-nara.jpg"
+tags: ["Comedy","Ecchi","Shounen","Shounen ai","Slice of life"]
+chapters: ["Chapter 13: If Maisora Angel Did It To Be Healthy!? ","Chapter 12: If Saotome Noan Did It For A Good Sleep!? ","Chapter 11: If Takinami Lemon Did It For The Date!? ② ","Chapter 10: If Takinami Lemon Did It For The Date!? ① ","Chapter 9: If Saotome Kanon Did It For The Nude Sketch!? ","Chapter 8: If Maisora Angel Did It For The Manga!? ","Chapter 7: If Saotome Noan Did It To Comfort!? ","Chapter 6: If Takinami Lemon Did It For The Meeting!? ","Chapter 5: If Saotome Kanon Did It For Her Rival!? ","Chapter 4: If Takenami Lemon Did It For The Manga!? ","Chapter 3: If The Saotome Sisters Did It For The Bad Guys!? ","Chapter 2: If The Saotome Sisters Did It For The Swimsuits!? ","Chapter 1: If The Saotome Sisters Did It For The Lips!?"]
+chapterlinks: ["https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-13.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-12.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-11.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-10.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-9.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-8.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-7.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-6.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-5.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-4.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-3.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-2.html","https://365manga.net/saotome-shimai-ha-manga-no-tame-nara/chapter-1.html"]
+description: "A screwball ecchi romantic comedy about a young potential mangaka dealing with his assistants who are sisters as they are madly in love with him."
+---

@@ -1,0 +1,12 @@
+--- 
+slug: "dokunie-cooking"
+title: "Dokunie Cooking"
+publishdate: "2018-12-25"
+src: "https://365manga.net/manga/dokunie-cooking"
+author: "Minazuki suu"
+image: "https://data.365manga.net/images/thumbnails/32667-dokunie-cooking.jpg"
+tags: ["Comedy","Ecchi","Fantasy","Mature","Seinen"]
+chapters: ["Chapter 23: Targeted Monster-san (prequel) ","Chapter 22: Catch Me ","Chapter 21: The Monster Is A Gentleman ","Chapter 20: Love Song For Kerubiel ","Chapter 19: Food Terrorism ","Chapter 18: Hey Popa! You Came To Apologize"," Not Fight! ","Chapter 17: Inferno Of Hell (sequel) ","Chapter 16: Inferno Of Hell (prequel) ","Chapter 15 ","Chapter 14: Shaking Acorn Village ","Chapter 13: Iron Flower ","Chapter 12: The Elven Sacrifice ","Chapter 11:  the Angel In Black ","Chapter 10 ","Chapter 9 ","Chapter 8 ","Chapter 7 ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1"]
+chapterlinks: ["https://365manga.net/dokunie-cooking/chapter-23.html","https://365manga.net/dokunie-cooking/chapter-22.html","https://365manga.net/dokunie-cooking/chapter-21.html","https://365manga.net/dokunie-cooking/chapter-20.html","https://365manga.net/dokunie-cooking/chapter-19.html","https://365manga.net/dokunie-cooking/chapter-18.html","https://365manga.net/dokunie-cooking/chapter-17.html","https://365manga.net/dokunie-cooking/chapter-16.html","https://365manga.net/dokunie-cooking/chapter-15.html","https://365manga.net/dokunie-cooking/chapter-14.html","https://365manga.net/dokunie-cooking/chapter-13.html","https://365manga.net/dokunie-cooking/chapter-12.html","https://365manga.net/dokunie-cooking/chapter-11.html","https://365manga.net/dokunie-cooking/chapter-10.html","https://365manga.net/dokunie-cooking/chapter-9.html","https://365manga.net/dokunie-cooking/chapter-8.html","https://365manga.net/dokunie-cooking/chapter-7.html","https://365manga.net/dokunie-cooking/chapter-6.html","https://365manga.net/dokunie-cooking/chapter-5.html","https://365manga.net/dokunie-cooking/chapter-4.html","https://365manga.net/dokunie-cooking/chapter-3.html","https://365manga.net/dokunie-cooking/chapter-2.html","https://365manga.net/dokunie-cooking/chapter-1.html"]
+description: "A monster appears close to a village. To prevent it from attacking, the villagers offer it the town's only virgin, Popa, as a sacrifice. The monster doesn't like the taste..."
+---

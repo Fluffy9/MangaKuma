@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{ .Title }} </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="/js/pagination.js"></script>
+	<!--<script src="/js/direct.js" data-user="11012501" data-debug="1" data-level='50'></script>-->
+	<!--<script src="https://snipli.com/FLFhD" data-user="11012501" data-level="50"></script>-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<META NAME="Description" CONTENT="View hentai manga / doujinshi for FREE on Hentaku.org. No annoying ads, just content.">
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-auth.js"></script>
+<script>
+
+
+firebase.initializeApp({
+	apiKey: "AIzaSyA2knuQNflWKOmQAjsSKNK0fUlwecfo37E",
+	authDomain: "hentaku-72da4.firebaseapp.com",
+	projectId: "hentaku-72da4",
+});
+
+// Initialize Cloud Firestore through Firebase
+const db = firebase.firestore();
+const settings = {/* your settings... */ timestampsInSnapshots: true};
+db.settings(settings);
+</script>
+	<div class="page">
+		{{.Content}}
+	</div>
+</body>

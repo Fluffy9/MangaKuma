@@ -1,0 +1,12 @@
+--- 
+slug: "the-exploding-girl"
+title: "The Exploding Girl"
+publishdate: "2018-12-12"
+src: "https://365manga.net/manga/the-exploding-girl"
+author: "Shi Tuzi"
+image: "https://data.365manga.net/images/thumbnails/32802-the-exploding-girl.jpg"
+tags: []
+chapters: ["Chapter 21: You're Just My Bait ","Chapter 20: The Monster's Real Intention Is...? ","Chapter 19: Catch That Monster! ","Chapter 18: The Green Haired Girl"," Her True Form Shall Be Revealed ","Chapter 17: Who Said I Was An Ordinary Girl? ","Chapter 16: A Date! ","Chapter 15: A Pure Boy Recalls His First Kiss"," A Surge Of Hidden Threats ","Chapter 14: What Are You Waiting For? Run! ","Chapter 13: This Kind Of Human Scum"," They're Better Off Dead ","Chapter 12: Conflict ","Chapter 11: Truth ","Chapter 10: Have You Seen A Bunny Like This? ","Chapter 9: Have You Seen A Bunny Like This? ","Chapter 8: Scene ","Chapter 7: The Situation ","Chapter 6 ","Chapter 5 ","Chapter 4 ","Chapter 3 ","Chapter 2 ","Chapter 1"]
+chapterlinks: ["https://365manga.net/the-exploding-girl/chapter-21.html","https://365manga.net/the-exploding-girl/chapter-20.html","https://365manga.net/the-exploding-girl/chapter-19.html","https://365manga.net/the-exploding-girl/chapter-18.html","https://365manga.net/the-exploding-girl/chapter-17.html","https://365manga.net/the-exploding-girl/chapter-16.html","https://365manga.net/the-exploding-girl/chapter-15.html","https://365manga.net/the-exploding-girl/chapter-14.html","https://365manga.net/the-exploding-girl/chapter-13.html","https://365manga.net/the-exploding-girl/chapter-12.html","https://365manga.net/the-exploding-girl/chapter-11.html","https://365manga.net/the-exploding-girl/chapter-10.html","https://365manga.net/the-exploding-girl/chapter-9.html","https://365manga.net/the-exploding-girl/chapter-8.html","https://365manga.net/the-exploding-girl/chapter-7.html","https://365manga.net/the-exploding-girl/chapter-6.html","https://365manga.net/the-exploding-girl/chapter-5.html","https://365manga.net/the-exploding-girl/chapter-4.html","https://365manga.net/the-exploding-girl/chapter-3.html","https://365manga.net/the-exploding-girl/chapter-2.html","https://365manga.net/the-exploding-girl/chapter-1.html"]
+description: "A story about a boy turned into a violent magic girl."
+---

@@ -1,0 +1,12 @@
+--- 
+slug: "we-want-to-talk-about-kaguya"
+title: "We Want to Talk About Kaguya"
+publishdate: "2018-12-29"
+src: "https://365manga.net/manga/we-want-to-talk-about-kaguya"
+author: "G3 Ida"
+image: "https://data.365manga.net/images/thumbnails/32635-we-want-to-talk-about-kaguya.jpg"
+tags: ["Comedy","School life","Seinen"]
+chapters: ["Chapter 13: I Want To Talk Using The Bible ","Chapter 12: We Want To Talk About The Bible ","Chapter 11: We Want To Give Words Of Encouragement ","Chapter 10: Erica Kose's Serious Problem"," Part 1 ","Chapter 9: I Want To Talk About The Lost Notebook ","Chapter 8: We Want To Talk About The President's Charm ","Chapter 7: We Want To Talk About Friendship ","Chapter 6: We Want To Talk About Our Lovestruck Friend ","Chapter 5: We Want To Talk With Our Friends ","Chapter 4: We Want To Talk About Secretary Fujiwara ","Chapter 3: I Want To Talk About My Obsession ","Chapter 2: I Want To Talk About The Movie Date ","Chapter 1: The Mass Media Club Wants To Talk"]
+chapterlinks: ["https://365manga.net/we-want-to-talk-about-kaguya/chapter-13.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-12.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-11.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-10.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-9.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-8.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-7.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-6.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-5.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-4.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-3.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-2.html","https://365manga.net/we-want-to-talk-about-kaguya/chapter-1.html"]
+description: "In this 4-koma spinoff of Kaguya Wants to be Confessed to, the members of Shuchiin's Mass Media Club, Erika Kose and Karen Kino, idolize Student Council Vice President Kaguya Shinomiya. This is the comedic tale of two delusional girls who have absolutely no idea what goes on in the Student Council room!"
+---

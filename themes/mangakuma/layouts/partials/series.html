@@ -1,0 +1,35 @@
+{{ $p := . }}
+{{ $title := $p.Params.title}}
+{{ $url := "http://api.mangakuma.net/manga?manga="}}
+{{$series := getJSON $url $p.Params.src }}
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+	$(".title").text(function(index, currentText) {
+		if(currentText.length > 70){
+			return currentText.substr(0, 70)+"...";
+		}
+		return currentText;
+	});
+	$(".description").text(function(index, currentText) {
+		if(currentText.length > 70){
+			return currentText.substr(0, 70).replace("{{ $p.Params.title }} manga summary: ","")+"...";
+		}
+		return currentText;
+	});
+});
+	
+</script>
+<!--series thumbnails-->
+	<div class="col-lg-3 col-xs-8">
+		<div class="card">
+			<img class="lozad card-img-top img-responsive responsive--full" src='{{- $p.Params.image -}}' data-src='{{- $p.Params.image -}}' onerror="this.onerror=null;this.src='https://hentaku.sfo2.cdn.digitaloceanspaces.com/{{- $p.Title -}}/0001.jpg';" style="max-width:100%; max-height:100%">
+			<div class="card-body">
+			<h5 class="card-title title">{{ $p.Params.title }}</h5>
+			<p class="card-text description">{{ $p.Params.description }}</p>
+			<p class="card-text"></p>
+			<a href="/manga/{{replace $p.Params.src "https://365manga.net/manga/" ""}}" class="btn btn-primary">Read More</a>
+			</div>
+		</div>	
+	</div>
+<!--series thumbnail-->

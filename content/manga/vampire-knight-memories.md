@@ -1,0 +1,12 @@
+--- 
+slug: "vampire-knight-memories"
+title: "Vampire Knight Memories"
+publishdate: "2019-01-08"
+src: "https://365manga.net/manga/vampire-knight-memories"
+author: "Hino Matsuri"
+image: "https://data.365manga.net/images/thumbnails/32530-vampire-knight-memories.jpg"
+tags: ["Drama","Mystery","Romance","School life","Shoujo","Shoujo ai","Supernatural"]
+chapters: ["Chapter 18 ","Vol.02 Chapter 17: Vol 02 ","Chapter 16 ","Chapter 15 ","Vol.02 Chapter 14: Vol 02 ","Chapter 13.5 ","Chapter 13 ","Vol.2 Chapter 12 ","Vol.2 Chapter 11 ","Vol.2 Chapter 10 ","Vol.2 Chapter 9 ","Vol.2 Chapter 8 ","Vol.02 Chapter 07 ","Vol.2 Chapter 6 ","Vol.2 Chapter 5 ","Vol.1 Chapter 4: Between The End Of Life And Heaven (revised Version) ","Vol.1 Chapter 3: Ai's Wish (revised Version) ","Vol.1 Chapter 2: I Like You (revised Version) ","Vol.2 Chapter 1"]
+chapterlinks: ["https://365manga.net/vampire-knight-memories/chapter-18.html","https://365manga.net/vampire-knight-memories/chapter-17.html","https://365manga.net/vampire-knight-memories/chapter-16.html","https://365manga.net/vampire-knight-memories/chapter-15.html","https://365manga.net/vampire-knight-memories/chapter-14.html","https://365manga.net/vampire-knight-memories/chapter-13-5.html","https://365manga.net/vampire-knight-memories/chapter-13.html","https://365manga.net/vampire-knight-memories/chapter-12.html","https://365manga.net/vampire-knight-memories/chapter-11.html","https://365manga.net/vampire-knight-memories/chapter-10.html","https://365manga.net/vampire-knight-memories/chapter-9.html","https://365manga.net/vampire-knight-memories/chapter-8.html","https://365manga.net/vampire-knight-memories/chapter-07.html","https://365manga.net/vampire-knight-memories/chapter-6.html","https://365manga.net/vampire-knight-memories/chapter-5.html","https://365manga.net/vampire-knight-memories/chapter-4.html","https://365manga.net/vampire-knight-memories/chapter-3.html","https://365manga.net/vampire-knight-memories/chapter-2.html","https://365manga.net/vampire-knight-memories/chapter-1.html"]
+description: "Vampire Knight Memories manga summary: The four original Vampire Knight 'special chapters' are now the first four chapters of 'Vampire Knight Memories'. This series focuses on Kaname living with Ai and Ren, and flashbacks of Yuki and Zero's relationship. A new chapter will be released every other month in Lala DX starting from July 2016."
+---

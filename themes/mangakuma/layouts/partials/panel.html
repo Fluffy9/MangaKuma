@@ -1,0 +1,24 @@
+<div >
+ <script>
+$(window).on('load', function(){ 
+jQuery(function(){
+         jQuery('#showall').click(function(){
+               jQuery('.targetDiv').show();
+        });
+        jQuery('.showSingle').click(function(){
+              jQuery('.targetDiv').hide();
+              jQuery('#div'+$(this).attr('target')).show();
+        });
+});
+});
+</script>
+<section class="cnt">
+{{$this := . }}
+{{ range $index, $element := .panel_components }}
+{{$path := (printf "%s%s" "" $element)}}
+{{partial "series-list.html" $this }}
+
+<div id="div{{print $index}}" class="targetDiv">Content   {{print $index}}</div>
+{{end}}
+</section>
+</div>
