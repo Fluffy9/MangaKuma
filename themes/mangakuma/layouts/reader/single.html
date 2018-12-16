@@ -123,7 +123,7 @@ $(document).ready(function(){
 	manga = getParameterByName("manga");
 	chapter = getParameterByName("chapter");
 	src = encodeURIComponent("https://365manga.net/" + manga + "/" + chapter);
-	var url = "http://api.mangakuma.net/chapter?url=" + src;
+	var url = "https://api.mangakuma.net/chapter?url=" + src;
 	$.getJSON(url, function(response) {
 		console.log(response);
 		images = response[0].image;
